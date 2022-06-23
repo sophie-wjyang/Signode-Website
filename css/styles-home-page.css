@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
 
-/**************************************** ALL  *********************************************/
+/**************************************** REUSED COMPONENTS *********************************************/
 
 * {
 	font-family: "Source Sans 3";
@@ -30,7 +30,6 @@
   background-color: #b73f27;
   margin-top: 15px;
   margin-bottom: 20px;
-
 }
 
 .hyperlink {
@@ -61,7 +60,7 @@
 }
 
 /* breakpoint to hide socials */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 990px) {
 	.socials {
 		display: none;
 	}
@@ -72,35 +71,62 @@
 /* background and text */
 #navbar-two-custom {
 	background-color: black;
-	color: white;
 	font-size: 16px;
 }
 
-/* display of navbar items */
-/* #navbar-two-custom #navbarSupportedContent{ 
-    display: flex;
-    justify-content: space-between;
-} */
-
-#navbar-two-custom .dropdown-toggle,
-.nav-link {
+#navbar-two-custom .nav-link {
 	font-family: "Open Sans";
 	color: white;
 }
+
+/* #navbar-two-custom .navbar-toggler{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+} */
 
 /************************************ NAVIGATION SEARCH *************************************/
 
 
 
-/************************************ BANNER *************************************/
+/************************************ HERO BANNER *************************************/
 
-/* height of banner image */
-.carousel-item {
-	height: 40rem;
+body, html {
+    height: 100%;
 }
 
-#banner-image{
+/* banner image */
+#banner-image {
+  background-image: url("../images/home-page/background-image.jpg");
   filter: brightness(25%);
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* banner text */
+.banner-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  color: white;
+}
+
+.banner-text h1{
+	font-family: "Open Sans";
+  font-size: 60px;
+}
+
+.banner-text p{
+  font-size: 20px;
+}
+
+.banner-divider-dash {
+  height: 7px;
+  width: 65px;
+  background-color: #b73f27;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* RESPONSIVE CSS

@@ -19,19 +19,7 @@
 	</head>
 
 	<body>
-		<script>
-			// hide other navbar items when user clicks into search bar
-			function navSearchFocus() {
-				var navItems = document.getElementById("navbar-items");
-				navItems.style.display = "none";
-			}
-
-			// show other navbar items when user clicks out of search bar
-			function navSearchBlur() {
-				var navItems = document.getElementById("navbar-items");
-				navItems.style.display = "";
-			}
-		</script>
+		
 
 		<!-- ******************************* NAVIGATION BAR ONE ************************************** -->
 
@@ -61,7 +49,10 @@
 
 		<!-- ******************************* NAVIGATION BAR TWO ************************************** -->
 
-		<nav class="navbar navbar-expand-lg" id="navbar-two-custom">
+
+
+
+		<nav class="navbar navbar-expand-lg navbar-dark" id="navbar-two-custom"> 
 			<div class="container">
 				<!-- logo -->
 				<a class="navbar-brand">
@@ -69,7 +60,7 @@
 				</a>
 
 				<!-- responsive navigation menu -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -161,22 +152,18 @@
 			</div>
 		</nav>
 
-		<!-- ******************************* BANNER ************************************** -->
+		<!-- ******************************* HERO BANNER ************************************** -->
 
-		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="images/home-page/background-image.png" id="banner-image" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>
+		<div id="banner-image"></div>
 
-					<div class="container">
-						<div class="carousel-caption text-start">
-							<h1>WE'LL PROTECT IT FROM HERE.</h1>
-							<p>Innovative, protective solutions for your packaging needs. Superior strap for the lightest to heaviest duty applications.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="container">
+            <div class="banner-text">
+                <h1>WE'LL PROTECT IT FROM HERE.</h1>
+                <div class="banner-divider-dash"></div> 
+                <p>Innovative, protective solutions for your packaging needs. Superior strap for the lightest to heaviest duty applications.</p>
+            </div>
+        </div>
+        
 
 		
         <!-- ******************************* WHAT WE DO & WHY SIGNODE************************************** -->
@@ -216,7 +203,6 @@
             <br><br><br><br><br><br>
             
             <!-- WHY SIGNODE -->
-             <!-- WHAT WE DO -->
              <div class="row featurette">
 
                 <!-- text -->
