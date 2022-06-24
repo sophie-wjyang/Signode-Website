@@ -143,6 +143,15 @@
 	border-radius: rounded;
 }
 
+/************************************ INDUSTRIES *************************************/
+
+.gallery-text{
+	font-family: "Open Sans";
+	color: black;
+	font-size: 18px;
+}
+
+
 /************************************ FOOTER *************************************/
 
 footer {
