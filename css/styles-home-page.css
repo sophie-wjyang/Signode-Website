@@ -10,34 +10,32 @@
 
 .main-heading {
 	font-family: "Open Sans";
-  font-size: 50px;
+	font-size: 50px;
 }
 
 .sub-heading {
 	font-family: "Source Sans 3";
-  color: #b73f27;
+	color: #b73f27;
 }
 
 .text-content {
 	font-family: "Source Sans 3";
-  font-size: 18px;
-  color: black;
+	font-size: 18px;
+	color: black;
 }
 
 .divider-dash {
-  height: 5px;
-  width: 60px;
-  background-color: #b73f27;
-  margin-top: 15px;
-  margin-bottom: 20px;
+	height: 5px;
+	width: 60px;
+	background-color: #b73f27;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
 .hyperlink {
 	color: white;
 	text-decoration: underline;
 }
-
-
 
 /************************************ NAVIGATION BAR ONE *************************************/
 
@@ -79,54 +77,43 @@
 	color: white;
 }
 
-/* #navbar-two-custom .navbar-toggler{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-} */
+#navbar-two-custom .navbar-toggler:onclick {
+	background-color: red;
+}
 
 /************************************ NAVIGATION SEARCH *************************************/
 
-
-
 /************************************ HERO BANNER *************************************/
 
-body, html {
-    height: 100%;
-}
-
-/* banner image */
-#banner-image {
-  background-image: url("../images/home-page/background-image.jpg");
-  filter: brightness(25%);
-  height: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.bg-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* filter: brightness(25%); */
 }
 
 /* banner text */
 .banner-text {
-  text-align: left;
-  position: absolute;
-  top: 40%;
-  color: white;
+	color: white;
 }
 
-.banner-text h1{
+.banner-text h1, h1 span {
 	font-family: "Open Sans";
-  font-size: 60px;
+	font-size: 60px;
 }
 
-.banner-text p{
-  font-size: 20px;
+
+.banner-text p {
+	font-size: 20px;
+	padding: 0;
 }
 
 .banner-divider-dash {
-  height: 7px;
-  width: 65px;
-  background-color: #b73f27;
-  margin-top: 25px;
-  margin-bottom: 25px;
+	height: 7px;
+	width: 65px;
+	background-color: #b73f27;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 /* RESPONSIVE CSS
@@ -148,10 +135,9 @@ body, html {
 }
 
 /************************************ WHAT WE DO & WHY SIGNODE *************************************/
-#what-we-do-image{
-  border-radius: rounded;
+#what-we-do-image {
+	border-radius: rounded;
 }
-
 
 /************************************ FOOTER *************************************/
 
