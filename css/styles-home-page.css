@@ -101,11 +101,11 @@
 	color: white;
 }
 
-.banner-text h1, h1 span {
+.banner-text h1,
+h1 span {
 	font-family: "Open Sans";
 	font-size: 60px;
 }
-
 
 .banner-text p {
 	font-size: 20px;
@@ -145,12 +145,34 @@
 
 /************************************ INDUSTRIES *************************************/
 
-.gallery-text{
+.gallery-text {
 	font-family: "Open Sans";
 	color: black;
 	font-size: 18px;
 }
 
+/************************************ ANIMATED STATS *************************************/
+
+#stats {
+	background: #b73f27;
+}
+
+#stats .col {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+
+#stats .stats-heading {
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+
+#stats .stats-subheading{
+	font-size: 18px;
+	color: white;
+}
 
 /************************************ FOOTER *************************************/
 
@@ -160,4 +182,132 @@ footer {
 
 .footer-font {
 	font-size: 13px;
+}
+
+.footer-bold-font {
+	font-size: 14px;
+}
+
+.linkedin-icon {
+	font-size: 30px;
+	color: white;
+}
+
+.youtube-icon {
+	font-size: 30px;
+	color: white;
+}
+
+/* Temp code */
+.jdDesktop {
+	width: 100%;
+	}
+	  
+	.jdHead {
+	  
+	  font-family: Open Sans;
+	  font-weight: 600;
+	  font-style: normal;
+	  font-size: 14px;
+	  letter-spacing: .14em;
+	  line-height: 1.4em;
+	  text-transform: uppercase;
+	  color: grey;
+	  padding-bottom: 1em;
+	  max-width: 16em;
+	  
+	}
+	.jdCell {
+		font-family: Open Sans;
+	  font-weight: 300;
+	  font-style: normal;
+	  font-size: 14px;
+	  letter-spacing: .14em;
+	  line-height: 1.4em;
+	  text-transform: uppercase;
+		  padding-bottom: .618em;
+	  padding-right:30px;
+	  
+	}
+	  
+	  /* Mobile Menu */
+	  .jdAccordion {
+	  background-color: #fff;
+	  color: #000;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	  transition: 0.4s;
+		text-transform: uppercase;
+  }
+  
+  .jdActive, .jdAccordion:hover {
+	  background-color: #fff;
+  }
+  
+  .jdAccordion:after {
+	  content: '\002B';
+	  color: #000;
+	  font-weight: bold;
+	  float: right;
+	  margin-left: 5px;
+	text-transform: uppercase;
+  }
+  
+  .jdActive:after {
+	  content: "\2212";
+	color: #000;
+  }
+  
+  .jdPanel {
+	  padding: 0 18px;
+	  background-color: #fff;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.5s ease-out;
+	color: black;
+  }
+	  
+	  /* Media Queries */
+	  
+  @media screen and (min-width: 768px) {
+	  .desktop {
+		  display: block;
+	  }
+	  .mobile {
+		display: none;
+	  }
+  }
+	  
+  @media screen and (max-width: 769px) {
+	  .desktop {
+		  display: none;
+	  }
+	  .mobile {
+		display: block;
+	  }
+  }
+
+  @media screen and (min-width: 992px) {
+	.contact-med-screen {
+		display: none;
+	}
+
+	.contact-other-screen {
+		display: block;
+	}
+}
+	
+@media screen and (max-width: 993px) {
+	.contact-med-screen {
+		display: block;
+	}
+
+	.contact-other-screen {
+		display: none;
+	}
 }
