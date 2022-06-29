@@ -1,25 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
 
-/**************************************** REUSED COMPONENTS *********************************************/
+/**************************************** GLOBAL *********************************************/
+
+/* global styling constants */
+:root{
+	--clr-signode-red: #b73f27;
+
+	--ff-open-sans: "Open Sans", sans-serif;
+	--ff-source-sans: "Source Sans 3", sans-serif;
+}
 
 * {
-	font-family: "Source Sans 3";
+	/* default font */
+	font-family: var(--ff-source-sans);
 	font-weight: 500;
 }
 
 .main-heading {
-	font-family: "Open Sans";
+	font-family: var(--ff-open-sans);
 	font-size: 50px;
 }
 
 .sub-heading {
-	font-family: "Source Sans 3";
-	color: #b73f27;
+	font-family: var(--ff-source-sans);
+	color: var(--clr-signode-red);
+	font-style: italic;
 }
 
 .text-content {
-	font-family: "Source Sans 3";
+	font-family: var(--ff-source-sans);
 	font-size: 18px;
 	color: black;
 }
@@ -27,7 +37,7 @@
 .divider-dash {
 	height: 5px;
 	width: 60px;
-	background-color: #b73f27;
+	background-color: var(--clr-signode-red);
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
@@ -41,7 +51,7 @@
 
 /* background and text */
 #navbar-one-custom {
-	background-color: #b73f27;
+	background-color: var(--clr-signode-red);
 	display: flex;
 	justify-content: space-between;
 	color: white;
@@ -57,23 +67,30 @@
 	padding-left: 15px;
 }
 
-/* breakpoint to hide socials */
-@media screen and (max-width: 990px) {
-	.socials {
+/* show navbar one for all sizes greater than or equal to 992 */
+@media screen and (min-width: 992px) {
+	#navbar-one-custom {
+		display: block;
+	}
+}
+
+/* hide navbar one for all sizes less than or equal to 991 */
+@media screen and (max-width: 991px) {
+	#navbar-one-custom {
 		display: none;
 	}
 }
 
 /************************************ NAVIGATION BAR TWO *************************************/
 
-/* background and text */
+/* BACKGROUND AND TEXT */
 #navbar-two-custom {
 	background-color: black;
 	font-size: 16px;
 }
 
 #navbar-two-custom .nav-link {
-	font-family: "Open Sans";
+	font-family: var(--ff-open-sans);
 	color: white;
 }
 
@@ -85,26 +102,32 @@
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/************************************ NAVIGATION SEARCH *************************************/
+
+/************************************ NAVIGATION BAR SEARCH *************************************/
+
+
+
+
+
+
+
 
 /************************************ HERO BANNER *************************************/
 
+/* background image */
 .bg-image {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* filter: brightness(25%); */
 }
 
-/* banner text */
+/* BANNER TEXT */
 .banner-text {
 	color: white;
 }
 
-.banner-text h1,
-h1 span {
-	font-family: "Open Sans";
-	font-size: 60px;
+.banner-text h1, h1 span {
+	font-family: var(--ff-open-sans);
 }
 
 .banner-text p {
@@ -115,10 +138,46 @@ h1 span {
 .banner-divider-dash {
 	height: 7px;
 	width: 65px;
-	background-color: #b73f27;
+	background-color: var(--clr-signode-red);
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
+
+/* RESPONSIVE FONT SIZES */
+
+/* applies to screen width greater than 1200 */
+@media screen and (min-width: 1200px) {
+	.banner-text h1, h1 span {
+		font-size: 65px;
+	}
+
+	.banner-text p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.banner-text h1, h1 span {
+		font-size: 55px;
+	}
+
+	.banner-text p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.banner-text h1, h1 span {
+		font-size: 45px;
+	}
+
+	.banner-text p {
+		font-size: 16px;
+	}
+}
+
+
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -146,7 +205,7 @@ h1 span {
 /************************************ INDUSTRIES *************************************/
 
 .gallery-text {
-	font-family: "Open Sans";
+	font-family: var(--ff-open-sans);
 	color: black;
 	font-size: 18px;
 }
@@ -154,7 +213,7 @@ h1 span {
 /************************************ ANIMATED STATS *************************************/
 
 #stats {
-	background: #b73f27;
+	background: var(--clr-signode-red);
 }
 
 #stats .col {
@@ -174,18 +233,18 @@ h1 span {
 	color: white;
 }
 
-/************************************ FOOTER *************************************/
 
+/************************************ FOOTER *************************************/
 footer {
 	background-color: black;
 }
 
-.footer-font {
+.footer-font-size {
 	font-size: 13px;
 }
 
-.footer-bold-font {
-	font-size: 14px;
+.card{
+	background-color: black;
 }
 
 .linkedin-icon {
@@ -198,116 +257,74 @@ footer {
 	color: white;
 }
 
-/* Temp code */
-.jdDesktop {
-	width: 100%;
-	}
-	  
-	.jdHead {
-	  
-	  font-family: Open Sans;
-	  font-weight: 600;
-	  font-style: normal;
-	  font-size: 14px;
-	  letter-spacing: .14em;
-	  line-height: 1.4em;
-	  text-transform: uppercase;
-	  color: grey;
-	  padding-bottom: 1em;
-	  max-width: 16em;
-	  
-	}
-	.jdCell {
-		font-family: Open Sans;
-	  font-weight: 300;
-	  font-style: normal;
-	  font-size: 14px;
-	  letter-spacing: .14em;
-	  line-height: 1.4em;
-	  text-transform: uppercase;
-		  padding-bottom: .618em;
-	  padding-right:30px;
-	  
-	}
-	  
-	  /* Mobile Menu */
-	  .jdAccordion {
-	  background-color: #fff;
-	  color: #000;
-	  cursor: pointer;
-	  padding: 18px;
-	  width: 100%;
-	  border: none;
-	  text-align: left;
-	  outline: none;
-	  font-size: 15px;
-	  transition: 0.4s;
-		text-transform: uppercase;
-  }
-  
-  .jdActive, .jdAccordion:hover {
-	  background-color: #fff;
-  }
-  
-  .jdAccordion:after {
-	  content: '\002B';
-	  color: #000;
-	  font-weight: bold;
-	  float: right;
-	  margin-left: 5px;
-	text-transform: uppercase;
-  }
-  
-  .jdActive:after {
-	  content: "\2212";
-	color: #000;
-  }
-  
-  .jdPanel {
-	  padding: 0 18px;
-	  background-color: #fff;
-	  max-height: 0;
-	  overflow: hidden;
-	  transition: max-height 0.5s ease-out;
-	color: black;
-  }
-	  
-	  /* Media Queries */
-	  
-  @media screen and (min-width: 768px) {
-	  .desktop {
-		  display: block;
-	  }
-	  .mobile {
-		display: none;
-	  }
-  }
-	  
-  @media screen and (max-width: 769px) {
-	  .desktop {
-		  display: none;
-	  }
-	  .mobile {
+.fa-phone{
+	font-size: 10px;
+}
+
+/************************************ MOBILE FOOTER *************************************/
+.card-header .title {
+    font-size: 17px;
+}
+
+.card-header .accicon {
+  float: right;
+  font-size: 20px;  
+  width: 1.2em;
+}
+
+.card-header{
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.card{
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body{
+  border-top: 1px solid #ddd;
+}
+
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+
+
+
+/************************************ RESPONSIVE CSS FOR FOOTER *************************************/	  
+@media screen and (min-width: 768px) {
+	.desktop {
 		display: block;
-	  }
-  }
-
-  @media screen and (min-width: 992px) {
-	.contact-med-screen {
+	}
+	.mobile {
 		display: none;
 	}
+}
+	  
+@media screen and (max-width: 769px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+}
 
-	.contact-other-screen {
+@media screen and (min-width: 993px) {
+	.md-screen {
+		display: none;
+	}
+	.other-screen {
 		display: block;
 	}
 }
 	
-@media screen and (max-width: 993px) {
-	.contact-med-screen {
+@media screen and (max-width: 992px) {
+	.md-screen {
 		display: block;
 	}
 
-	.contact-other-screen {
+	.other-screen {
 		display: none;
 	}
 }

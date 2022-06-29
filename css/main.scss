@@ -1,0 +1,30 @@
+/* entire search bar */
+#nav-search-bar{
+    border: 2px solid red;
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+/* expandable input field */
+#nav-search-bar #nav-search-bar-input {
+    flex-grow: 1;
+    border: 0;
+    background-color: #847dff;
+    color: white;
+}
+
+#nav-search-bar #nav-search-bar-input::placeholder {
+    color: white;
+}
+
+/* search icon */
+#nav-search-bar #nav-search-bar-submit {
+    flex-grow: 1;
+    border-radius: 50%;
+
+    width: 45px;
+    height: 40px;
+}
