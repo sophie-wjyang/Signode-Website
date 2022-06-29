@@ -107,10 +107,78 @@
 
 
 
+/* entire search box */
+#search-box-desktop {
+	position: relative;
+	padding: 0;
+}
 
+/* expandable input box */
+#search-input {
+	position: relative;
+	border: none;
+	outline: none;
+	background: none;
+	padding-right: 70px;
+	z-index: 3;
+	cursor: pointer;
+	
+  /* initial width is 0, until you click search icon */
+  width: 0px;
+	transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
+	
+	/* inputted text */
+	font-size: 16px;
+	color: white;
+}
 
+/* width of search bar expands once we click the search icon */
+#search-input:focus {
+  /* expanded width */
+  width: 400px;
+  z-index: 1;
+  border-bottom: 1px solid white;
+  cursor: text;
+}
 
+#search-input:focus:hover {
+	border-bottom: 1px solid rgb(218, 218, 218);
+}
 
+/* placeholder text */
+#search-input::placeholder {
+	font-size: 16px;
+	color: rgb(218, 218, 218);
+}
+
+/* search icon */
+#search-submit {
+	width: 63px;
+	background: url(../images/partials/search-icon.svg) center center no-repeat;
+	text-indent: -10000px;
+	outline: none;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	#search-input:focus {
+		/* expanded width */
+		width: 720px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#search-input:focus {
+		/* expanded width */
+		width: 900px;
+	}
+}
 
 /************************************ HERO BANNER *************************************/
 

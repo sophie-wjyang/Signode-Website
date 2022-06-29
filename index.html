@@ -48,12 +48,12 @@
 		
 		
 		<!-- ******************************* NAVIGATION BAR TWO ************************************** -->
-		
-		<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-two-custom"> 
+			
+		<nav class="navbar navbar-expand-lg navbar-dark ml-auto" id="navbar-two-custom"> 
 			<div class="container">
 				<!-- logo -->
-				<a class="navbar-brand">
-					<img src="images/home-page/signode-logo.png" alt="" width="180" />
+				<a class="navbar-brand" id="hide-brand-logo">
+					<img src="images/partials/signode-logo.png" alt="" width="180" />
 				</a>
 		
 				<!-- responsive navigation menu -->
@@ -62,8 +62,8 @@
 				</button>
 		
 				<!-- navbar items -->
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbar-items">
+				<div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="hide-navbar-items">
 						<li class="nav-item px-2">
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
 						</li>
@@ -135,16 +135,21 @@
 						<li class="nav-item px-2">
 							<a class="nav-link active" aria-current="page" href="#">Contact</a>
 						</li>
+		  
 					</ul>
-			
-					<form role="search">
-						<input type="text" class="search-input" placeholder="What are you looking for?">
-					</form>
-					
-					
-					<!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-					<button class="btn btn-outline-success" type="submit">Search</button> -->
-			
+		
+		<!-- search bar: desktop version -->
+		<div id="search-box-desktop" >
+		  <form class="d-flex align-items-center" autocomplete="off">
+			<!-- expandable input box -->
+			<input id="search-input" type="text" placeholder="What are you looking for?" onfocus="navSearchFocus()" onblur="navSearchBlur()">
+			<!-- search icon -->
+			<input id="search-submit">
+		  </form>
+		</div>
+
+
+		
 				</div>
 			</div>
 		</nav>
@@ -379,7 +384,7 @@
 						<!-- Grid column 1 -->
 						<div class="col-md-12 col-lg-3 col-xl-4 mb-md-3 mx-auto">
 							<!-- Signode Logo & Description -->
-							<img src="images/home-page/signode-logo.png" class="img-fluid mb-4" alt="Signode Logo">
+							<img src="images/partials/signode-logo.png" class="img-fluid mb-4" alt="Signode Logo">
 							<p class="md-screen">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink text-reset" >Crown Holdings, Inc.</a> <br>Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
 							<p class="other-screen">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink text-reset" >Crown Holdings, Inc.</a></p>
 							<p class="other-screen">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
@@ -472,7 +477,7 @@
 			
 			<div class="container">
 				<!-- Signode Logo & Description -->
-				<img src="images/home-page/signode-logo.png" class="img-fluid mb-2 ml-3" alt="Signode Logo">
+				<img src="images/partials/signode-logo.png" class="img-fluid mb-2 ml-3" alt="Signode Logo">
 				<p class="ml-4">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink" >Crown Holdings, Inc.</a> <br>Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
 				
 				<!-- Sections -->
