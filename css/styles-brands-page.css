@@ -31,8 +31,7 @@
 .text-content {
 	font-family: var(--ff-source-sans);
 	font-size: 18px;
-	font-weight: 400;
-	color: rgb(51, 51, 51);
+	color: black;
 }
 
 .divider-dash {
@@ -103,118 +102,6 @@
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
-/************************************ NAVIGATION BAR SEARCH *************************************/
-
-
-
-/* entire search box */
-#search-box-desktop {
-	position: relative;
-	padding: 0;
-}
-
-/* expandable input box */
-#search-input {
-	position: relative;
-	border: none;
-	outline: none;
-	background: none;
-	padding-right: 70px;
-	z-index: 3;
-	cursor: pointer;
-	
-  /* initial width is 0, until you click search icon */
-  width: 0px;
-	transition: width 0.5s cubic-bezier(0, 0.795, 0, 1);
-	
-	/* inputted text */
-	font-size: 16px;
-	color: white;
-}
-
-/* width of search bar expands once we click the search icon */
-#search-input:focus {
-  /* expanded width */
-  width: 400px;
-  z-index: 1;
-  border-bottom: 1px solid white;
-  cursor: text;
-}
-
-#search-input:focus:hover {
-	border-bottom: 1px solid rgb(218, 218, 218);
-}
-
-/* placeholder text */
-#search-input::placeholder {
-	font-size: 16px;
-	color: rgb(218, 218, 218);
-}
-
-/* search icon */
-#search-submit {
-	width: 63px;
-	background: url(../images/partials/search-icon.svg) center center no-repeat;
-	text-indent: -10000px;
-	outline: none;
-	border: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 2;
-	cursor: pointer;
-}
-
-/* RESPONSIVE BREAKPOINTS */
-@media screen and (min-width: 992px) and (max-width: 1199px){
-	#search-input:focus {
-		/* expanded width */
-		width: 720px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	#search-input:focus {
-		/* expanded width */
-		width: 900px;
-	}
-}
-
-/************************************ HERO BANNER *************************************/
-
-/* background image */
-.bg-image {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/* BANNER TEXT */
-.banner-text {
-	color: white;
-}
-
-.banner-text h1, h1 span {
-	font-family: var(--ff-open-sans);
-}
-
-.banner-text p {
-	font-size: 20px;
-	padding: 0;
-}
-
-.banner-divider-dash {
-	height: 7px;
-	width: 65px;
-	background-color: var(--clr-signode-red);
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-
-
-/* RESPONSIVE FONT SIZES */
-
 /* applies to screen width greater than 1200 */
 @media screen and (min-width: 1200px) {
 	.banner-text h1, h1 span {
@@ -266,44 +153,7 @@
 	}
 }
 
-/************************************ WHAT WE DO & WHY SIGNODE *************************************/
-#what-we-do-image {
-	border-radius: rounded;
-}
-
-/************************************ INDUSTRIES *************************************/
-
-.gallery-text {
-	font-family: var(--ff-open-sans);
-	color: black;
-	font-size: 18px;
-}
-
-/************************************ ANIMATED STATS *************************************/
-
-#stats {
-	background: var(--clr-signode-red);
-}
-
-#stats .col {
-	margin-top: 100px;
-	margin-bottom: 100px;
-
-}
-
-#stats .stats-heading {
-	font-size: 50px;
-	font-weight: bold;
-	color: white;
-}
-
-#stats .stats-subheading{
-	font-size: 18px;
-	color: white;
-}
-
-
-/************************************ DESKTOP FOOTER *************************************/
+/************************************ FOOTER *************************************/
 footer {
 	background-color: black;
 }
@@ -361,7 +211,6 @@ footer {
 
 
 /************************************ RESPONSIVE CSS FOR FOOTER *************************************/	  
-/* entire footer */
 @media screen and (min-width: 768px) {
 	.desktop {
 		display: block;
@@ -380,7 +229,6 @@ footer {
 	}
 }
 
-/* small fixes for spacing and formatting */
 @media screen and (min-width: 993px) {
 	.md-screen {
 		display: none;

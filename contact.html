@@ -13,7 +13,8 @@
 		<script src="https://kit.fontawesome.com/065b6a01b6.js" crossorigin="anonymous"></script>
 
 		<!-- external stylesheet -->
-		<link rel="stylesheet" href="css/styles-home-page.css" />
+		<link rel="stylesheet" href="css/styles-brands-page.css" />
+		<link rel="stylesheet" href="css/styles-contact-page.css" />
 
 		<title>Signode Canada</title>
 	</head>
@@ -48,11 +49,11 @@
 		
 		
 		<!-- ******************************* NAVIGATION BAR TWO ************************************** -->
-			
-		<nav class="navbar navbar-expand-lg navbar-dark ml-auto sticky-top" id="navbar-two-custom"> 
+		
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-two-custom"> 
 			<div class="container">
 				<!-- logo -->
-				<a class="navbar-brand" id="hide-brand-logo">
+				<a class="navbar-brand">
 					<img src="images/partials/signode-logo.png" alt="" width="180" />
 				</a>
 		
@@ -62,20 +63,20 @@
 				</button>
 		
 				<!-- navbar items -->
-				<div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="hide-navbar-items">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbar-items">
 						<li class="nav-item px-2">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
 						</li>
 		
 						<li class="nav-item dropdown px-2">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li>
-									<a class="dropdown-item" href="about.html">About Us</a>
+									<a class="dropdown-item" href="#">Action</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="brands.html">Brands</a>
+									<a class="dropdown-item" href="#">Another action</a>
 								</li>
 								<li><hr class="dropdown-divider" /></li>
 								<li>
@@ -133,246 +134,140 @@
 						</li>
 
 						<li class="nav-item px-2">
-							<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+							<a class="nav-link active" aria-current="page" href="#">Contact</a>
 						</li>
-		  
 					</ul>
-		
-		<!-- search bar: desktop version -->
-		<div id="search-box-desktop" >
-		  <form class="d-flex align-items-center" autocomplete="off">
-			<!-- expandable input box -->
-			<input id="search-input" type="text" placeholder="What are you looking for?" onfocus="navSearchFocus()" onblur="navSearchBlur()">
-			<!-- search icon -->
-			<input id="search-submit">
-		  </form>
-		</div>
-
-
-		
+			
+					<form role="search">
+						<input type="text" class="search-input" placeholder="What are you looking for?">
+					</form>
+					
+					
+					<!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+					<button class="btn btn-outline-success" type="submit">Search</button> -->
+			
 				</div>
 			</div>
 		</nav>
 
-		
-		<!-- ******************************* HERO BANNER ************************************** -->
+	
 
-		<div class="bg-image p-5 text-left shadow-1-strong mb-5 text-white d-flex" style="background-image: url('../images/home-page/banner-image.png'); height: 700px;">
-			<div class="container banner-text align-self-center my-auto">
-				<h1>WE'LL <span style="color: #b43c25">PROTECT</span> IT FROM HERE.</h1>
-				<div class="banner-divider-dash"></div> 
-				<p class="col-7">Innovative, protective solutions for your packaging needs. Superior strap for the lightest to heaviest duty applications.</p>
-			</div>
-		</div>
-		
-
-		
-        <!-- ******************************* WHAT WE DO & WHY SIGNODE************************************** -->
-
-		<div class="container marketing">
-            
-            <br><br><br><br><br><br>
-
-            <!-- WHAT WE DO -->
-            <div class="row featurette">
-
-                <!-- text -->
-                <div class="col-md-6 order-md-3">
-
-                    <div class="featurette-heading">
-                        <h5 class="sub-heading">About Us</h5>
-                        <h2 class="fw-normal lh-1 main-heading">What We Do </h2>
-                    </div>
-
-                    <div class="divider-dash"></div> 
-                    
-                    <p class="lead text-content">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment. 
-                    We provide our customers with advanced solutions that increase production efficiency, improve load integrity, and reduce operating costs.</p>
-                
-                </div>
-
-                <!-- column for spacing -->
-                <div class="empty-column col-md-1 order-md-2"></div>
-
-                <!-- image -->
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" src="images/home-page/what-we-do.jpg" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-                </div>
-            </div>
-
-            <br><br><br><br><br><br>
-            
-            <!-- WHY SIGNODE -->
-             <div class="row featurette">
-
-                <!-- text -->
-                <div class="col-md-6 order-md-1">
-
-                    <div class="featurette-heading">
-                        <h5 class="sub-heading">About Us</h5>
-                        <h2 class="fw-normal lh-1 main-heading">Why Signode</h2>
-                    </div>
-
-                    <div class="divider-dash"></div> 
-                    
-                    <p class="lead text-content">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment. 
-                    We provide our customers with advanced solutions that increase production efficiency, improve load integrity, and reduce operating costs.</p>
-                
-                </div>
-
-                <!-- column for spacing -->
-                <div class="empty-column col-md-1 order-md-2"></div>
-
-                <!-- image -->
-                <div class="col-md-5 order-md-3">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" src="images/home-page/why-signode.jpg" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-                </div>
-            </div>
-		</div>
-
-        <br><br><br><br><br><br>
-
-		<hr>
-
-        <!-- ******************************* INDUSTRIES ************************************** -->
+        <!-- ******************************* BRANDS ************************************** -->
 
 		<!-- Subheading and heading -->
 		<div class="container">
 			<div class="featurette-heading">
-				<h5 class="sub-heading">Sectors</h5>
-				<h2 class="fw-normal lh-1 main-heading">Industries</h2>
+				<h5 class="sub-heading">Contact</h5>
+				<h2 class="fw-normal lh-1 main-heading">Contact Us</h2>
 			</div>
 
 			<div class="divider-dash"></div> 
 		</div> <br><br>
 
-		<!-- Industries gallery -->
-		<div class="container" id="industry-gallery">
-			  <div class="row">
 
-				<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-				  <div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/lumber-and-panelboard.png" alt="" class="img-fluid card-img-top">
-					<div class="p-4">
-					  <h5> <a href="#" class="gallery-text">Lumber & Panelboard</a></h5>
-					</div>
-				  </div>
-				</div>
-				
-				<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					<div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/corrugated.png" alt="" class="img-fluid card-img-top">
-					  <div class="p-4">
-						<h5> <a href="#" class="gallery-text">Corrugated</a></h5>
-					  </div>
-					</div>
-				  </div>
-				  <!-- End -->
-				  
-				  <!-- Gallery item -->
-				  <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					  <div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/production-and-logistics.png" alt="" class="img-fluid card-img-top">
-						<div class="p-4">
-						  <h5> <a href="#" class="gallery-text">Production & Logistics</a></h5>
+		<div class="container">
+
+			<div class="row">
+	
+				<div class="col-xl-8 py-5">
+	
+					<form id="contact-form" method="post" action="contact.php" role="form">
+	
+						<div class="messages"></div>
+	
+						<div class="controls">
+	
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_name">First Name *</label>
+										<input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_lastname">Last Name *</label>
+										<input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_email">Email Address *</label>
+										<input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_tel">Phone *</label>
+										<input id="form_tel" type="tel" name="tel" class="form-control" required="required" data-error="".one number is required></input>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Company Name </label>
+										<input name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+								<!-- <div class="col-md-6">
+									<div class="form-group">
+										<label for="form_need">Province *</label>
+										<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+											<option value=""></option>
+											<option value="Alberta">Alberta</option>
+											<option value="British Columbia">British Columbia</option>
+											<option value="Manitoba">Manitoba</option>
+											<option value="New Brunswick">New Brunswick</option>
+											<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+											<option value="Nova Scotia">Nova Scotia</option>
+											<option value="Ontario">Ontario</option>
+											<option value="Prince Edward Island">Prince Edward Island</option>
+											<option value="Quebec">Quebec</option>
+											<option value="Saskatchewan">Saskatchewan</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div> -->
+							
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="form_message">Message *</label>
+										<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" class="btn btn-success btn-send" value="Submit">
+								</div>
+							</div>
 						</div>
-					  </div>
-					</div>
-					<!-- End -->
-
-					<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					<div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/paper-and-graphic-arts.png" alt="" class="img-fluid card-img-top">
-					  <div class="p-4">
-						<h5> <a href="#" class="gallery-text">Paper & Graphic Arts</a></h5>
-					  </div>
-					</div>
-				  </div>
-				  
-				  <!-- Gallery item -->
-				  <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					  <div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/metal.png" alt="" class="img-fluid card-img-top">
-						<div class="p-4">
-						  <h5> <a href="#" class="gallery-text">Metals</a></h5>
-						</div>
-					  </div>
-					</div>
-					<!-- End -->
-
-					<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-				  <div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/brick-and-concrete-pavers.png" alt="" class="img-fluid card-img-top">
-					<div class="p-4">
-					  <h5> <a href="#" class="gallery-text">Brick & Concrete Pavers</a></h5>
-					</div>
-				  </div>
+	
+					</form>
+	
 				</div>
-				
-				<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					<div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/beverage-and-containers.png" alt="" class="img-fluid card-img-top">
-					  <div class="p-4">
-						<h5> <a href="#" class="gallery-text">Beverage and Containers</a></h5>
-					  </div>
-					</div>
-				  </div>
-				  <!-- End -->
-
-				  	  <!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					<div class="bg-white rounded shadow-sm"><img src="images/home-page/industries/meat-poultry-seafood.png" alt="" class="img-fluid card-img-top">
-					  <div class="p-4">
-						<h5> <a href="#" class="gallery-text">Meat, Poultry, and Seafood</a></h5>
-					  </div>
-					</div>
-				  </div>
-		  
-				
-		  
+				<!-- /.8 -->
+	
 			</div>
+			<!-- /.row-->
+	
 		</div>
- 
-		<br><br><br><br><br><br>
+		
 
 
-		<!-- ******************************* ANIMATED STATS ************************************** -->
+
 		
-		<div id="stats">
-			<div class="container">
-			  <div class="row">
-				<div class="col">
-				  <span class="value stats-heading" end_val="80">0</span>
-				  <span class="stats-heading">+</span><br>
-				  <span class="stats-subheading">Manufacturing facilities worldwide</span>
-				</div>
-			
-				<div class="col">
-				  <span class="value stats-heading" end_val="100">0</span>
-				  <span class="stats-heading">+</span><br>
-				  <span class="stats-subheading">Employees</span>
-				</div>
-			
-				<div class="col">
-				  <span class="value stats-heading" end_val="35">0</span>
-				  <span class="stats-heading">+</span><br>
-				  <span class="stats-subheading">Valued packaging brands</span>
-				</div>
-			
-				<div class="col">
-				  <span class="value stats-heading" end_val="2">0</span>
-				  <span class="stats-heading">+</span><br>
-				  <span class="stats-subheading">Billion dollars in revenue</span>
-				</div>
-			
-				<div class="col">
-				  <span class="value stats-heading" end_val="6">0</span><br>
-				  <span class="stats-subheading">Continents across the globe</span>
-				</div>
-		   
-			  </div>
-			</div>
-		  </div>
-		
-		
+
 		<!-- ******************************* FOOTER ************************************** -->
 		<!-- Footer used for bigger screens (desktop) -->
 		<footer class="text-white desktop pb-3 footer-font-size">
