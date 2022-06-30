@@ -11,11 +11,9 @@ label {
 }
 
 .btn-send {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 20px;
+    background-color: #b43c25;
 }
+
 
 .help-block.with-errors {
     color: #ff5050;

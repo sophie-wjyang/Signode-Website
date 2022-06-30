@@ -15,144 +15,30 @@
 		<!-- external stylesheet -->
 		<link rel="stylesheet" href="css/styles-home-page.css" />
 
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 		<title>Signode Canada</title>
+
+		<script>
+			$(function(){
+				$('#navbar-one').load('partials/navbar-one.html');
+				$('#navbar-two').load('partials/navbar-two.html');
+				$('#footer').load('partials/footer.html');
+			});
+		</script>
 	</head>
 
 	<body>
 
 		<!-- ******************************* NAVIGATION BAR ONE ************************************** -->
 
-		<nav class="navbar navbar-expand-lg py-0" id="navbar-one-custom">
-			<div class="container-fluid">
-				<span>
-					<!-- location -->
-					<a class="location navbar-brand">
-						<i class="fa-solid fa-location-dot"></i>
-						<span class="navbar-text"> &nbsp; 241 Gough Road Markham, ON, Canada L3R 5B3 &nbsp; &nbsp; </span>
-					</a>
-
-					<!-- contact -->
-					<a class="contact navbar-brand">
-						<i class="fa-solid fa-phone"></i>
-						<span class="navbar-text"> &nbsp; 905-479-9754 / Toll-free: 1-800-387-5173 / Fax: 905-479-4869 </span>
-					</a>
-				</span>
-
-				<!-- socials -->
-				<a class="socials navbar-brand">
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-brands fa-youtube"></i>
-				</a>
-			</div>
-		</nav>
+		<div id="navbar-one"></div>
 		
 		
 		<!-- ******************************* NAVIGATION BAR TWO ************************************** -->
-			
-		<nav class="navbar navbar-expand-lg navbar-dark ml-auto sticky-top" id="navbar-two-custom"> 
-			<div class="container">
-				<!-- logo -->
-				<a class="navbar-brand" id="hide-brand-logo">
-					<img src="images/partials/signode-logo.png" alt="" width="180" />
-				</a>
-		
-				<!-- responsive navigation menu -->
-				<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<!-- navbar items -->
-				<div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="hide-navbar-items">
-						<li class="nav-item px-2">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-						</li>
-		
-						<li class="nav-item dropdown px-2">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li>
-									<a class="dropdown-item" href="about.html">About Us</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="brands.html">Brands</a>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
-		
-						<li class="nav-item dropdown px-2">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industries </a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li>
-									<a class="dropdown-item" href="#">Action</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Another action</a>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
-		
-						<li class="nav-item dropdown px-2">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Products </a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li>
-									<a class="dropdown-item" href="#">Action</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Another action</a>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
-		
-						<li class="nav-item dropdown px-2">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Solutions </a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li>
-									<a class="dropdown-item" href="#">Action</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Another action</a>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
 
-						<li class="nav-item px-2">
-							<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-						</li>
-		  
-					</ul>
-		
-		<!-- search bar: desktop version -->
-		<div id="search-box-desktop" >
-		  <form class="d-flex align-items-center" autocomplete="off">
-			<!-- expandable input box -->
-			<input id="search-input" type="text" placeholder="What are you looking for?" onfocus="navSearchFocus()" onblur="navSearchBlur()">
-			<!-- search icon -->
-			<input id="search-submit">
-		  </form>
-		</div>
-
-
-		
-				</div>
-			</div>
-		</nav>
+		<div id="navbar-two" class="sticky-top"></div>
 
 		
 		<!-- ******************************* HERO BANNER ************************************** -->
@@ -372,230 +258,22 @@
 			</div>
 		  </div>
 		
-		
+
 		<!-- ******************************* FOOTER ************************************** -->
-		<!-- Footer used for bigger screens (desktop) -->
-		<footer class="text-white desktop pb-3 footer-font-size">
-			<!-- Section: Links  -->
-			<section class="border-bottom pb-5">
-				<div class="container text-left mt-5 pt-4">
-					<!-- Grid row -->
-					<div class="row mt-5 pt-4">
-						<!-- Grid column 1 -->
-						<div class="col-md-12 col-lg-3 col-xl-4 mb-md-3 mx-auto">
-							<!-- Signode Logo & Description -->
-							<img src="images/partials/signode-logo.png" class="img-fluid mb-4" alt="Signode Logo">
-							<p class="md-screen">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink text-reset" >Crown Holdings, Inc.</a> <br>Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
-							<p class="other-screen">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink text-reset" >Crown Holdings, Inc.</a></p>
-							<p class="other-screen">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
-		
-							<!-- socials -->
-							<a href="https://www.linkedin.com/company/signode/" target="_blank"> <i class="fa-brands fa-linkedin mr-3 linkedin-icon"></i></a>
-							<a href="https://www.youtube.com/user/SignodeVideoLibrary" target="_blank"><i class="fa-brands fa-youtube youtube-icon"></i></a>
-						</div> 
 
-						<!-- Grid column 2 -->
-						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-							<!-- Column Title -->
-							<p class="mb-2"> <b>Industries</b> </p>
-							<!-- Links -->
-							<p class="mb-2"><a href="#!" class="text-reset">Lumbar & Panelboard</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Corrugated</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Production/Logistics</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Paper/Graphic Arts</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Metals</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Brick & Concrete Pavers</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Beverage & Containers</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Meat, Poultry & Seafood</a></p>
-						</div>
-			
-						<!-- Grid column 3 -->
-						<div class="col-md-2 col-lg-1 col-xl-1 mx-auto">
-							<!-- Column Tile -->
-							<p class="mb-2"> <b>Products</b> </p>
-							<!-- Links -->
-							<p class="mb-2"><a href="#!" class="text-reset">Pack</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Bundle</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Utilize</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Warehouse</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Transport</a></p>
-						</div>
-		
-						<!-- Grid column 4 -->
-						<div class="col-md-2 col-lg-1 col-xl-1 mx-auto">
-							<!-- Column Title -->
-							<p class="mb-2"> <b>Solutions</b> </p>
-							<!-- Links -->
-							<p class="mb-2"><a href="#!" class="text-reset">Pack</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Bundle</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Utilize</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Warehouse</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Transport</a></p>
-						</div>
-		
-						<!-- Grid column 5 -->
-						<div class="col-md-2 col-lg-1 col-xl-1 mx-auto">
-							<!-- Column Title -->
-							<p class="mb-2"> <b>Company</b> </p>
-							<!-- Links -->
-							<p class="mb-2"><a href="#!" class="text-reset">About Us</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">History</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Brands</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">News</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Careers</a></p>
-							<p class="mb-2"><a href="#!" class="text-reset">Contact Us</a></p>
-						</div>
-						
-						<!-- Grid column 6 -->
-						<div class="col-md-3 col-lg-3 col-xl-2 mx-auto">
-							<!-- Column Title -->
-							<p class="mb-2"> <b>Contact Us</b> </p>
-							<!-- Contact Information -->
-							<p class="mb-4"><i class="fa-solid fa-location-dot"></i> &nbsp 241 Gough Road <br>  &nbsp &nbsp &nbsp Markham, ON, Canada <br> &nbsp &nbsp &nbsp L3R 5B3</p>
-							<p class="other-screen"><i class="fa-solid fa-phone"></i>  &nbsp 905-479-9754 <br> &nbsp &nbsp &nbsp Toll-free: 1-800-387-5173 <br> &nbsp &nbsp &nbsp Fax: 905-479-4869</p>
-							<p class="md-screen"><i class="fa-solid fa-phone"></i>  &nbsp 905-479-9754 <br> &nbsp &nbsp &nbsp Toll-free: <br> &nbsp &nbsp &nbsp 1-800-387-5173 <br> &nbsp &nbsp &nbsp Fax: 905-479-4869</p>
-						</div>	
-			</section>
-			
-			<!-- Copyright & Privacy, Terms of Use Section -->
-			<div class="container">
-				<div class="row mt-3">
-					<!-- Copyright -->
-					<div class="col-md-6 col-lg-8">
-						<p>© <script>document.write(new Date().getFullYear());</script> Signode Canada. All rights reserved.</p>
-					</div>
-					<!-- Privacy Policy & Terms of Use -->
-					<div class="col-md-6 col-lg-4 text-right">
-						<p> <a href="#!" class="text-reset">Privacy Policy</a> &nbsp &nbsp &nbsp &nbsp <a href="#!" class="text-reset">Terms of Use</a></p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Footer used for smaller screens (mobile) -->
-		<footer class="text-white mobile mt-5 pt-4 pb-3 footer-font-size">
-			
-			<div class="container">
-				<!-- Signode Logo & Description -->
-				<img src="images/partials/signode-logo.png" class="img-fluid mb-2 ml-3" alt="Signode Logo">
-				<p class="ml-4">Transit Packaging Division of <a href="https://www.crowncork.com/" target="_blank" class="hyperlink" >Crown Holdings, Inc.</a> <br>Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment.</p>
-				
-				<!-- Sections -->
-				<div class="accordion" id="accordionExample">
-					<!-- Industries -->
-					<div class="card">
-						<!-- Card Title 1 -->
-						<div class="card-header collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">     
-							<span class="title">Industries</span>
-							<span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-						</div>	
-						<!-- Content for card 1 -->
-						<div id="collapseOne" class="collapse" data-parent="#accordionExample">
-							<div class="card-body">
-								<p class="mb-2"><a href="#!" class="text-reset">Lumbar & Panelboard</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Corrugated</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Production/Logistics</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Paper/Graphic Arts</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Metals</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Brick & Concrete Pavers</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Beverage & Containers</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Meat, Poultry & Seafood</a></p>
-							</div>
-						</div>
-					</div>
-					<!-- Products -->
-					<div class="card">
-						<!-- Card Title 2 -->
-						<div class="card-header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">     
-							<span class="title">Products</span>
-							<span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-						</div>
-						<!-- Content for card 2 -->
-						<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
-							<div class="card-body">
-								<p class="mb-2"><a href="#!" class="text-reset">Pack</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Bundle</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Utilize</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Warehouse</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Transport</a></p>							
-							</div>
-						</div>
-					</div>
-					<!-- Solutions -->
-					<div class="card">
-						<!-- Card Title 3 -->
-						<div class="card-header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-							<span class="title">Solutions</span>
-							<span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-						</div>
-						<!-- Content for card 3 -->
-						<div id="collapseThree" class="collapse" data-parent="#accordionExample">
-							<div class="card-body">
-								<p class="mb-2"><a href="#!" class="text-reset">Pack</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Bundle</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Utilize</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Warehouse</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Transport</a></p>	
-							</div>
-						</div>
-					</div>
-					<!-- Company -->
-					<div class="card">
-						<!-- Card Title 4 -->
-						<div class="card-header collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
-							<span class="title">Company</span>
-							<span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-						</div>
-						<!-- Content for card 4 -->
-						<div id="collapseFour" class="collapse" data-parent="#accordionExample">
-							<div class="card-body">
-								<p class="mb-2"><a href="#!" class="text-reset">About Us</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">History</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Brands</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">News</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Careers</a></p>
-								<p class="mb-2"><a href="#!" class="text-reset">Contact Us</a></p>				
-							</div>
-						</div>
-					</div>
-					<!-- Contact Us -->
-					<div class="card border-bottom">
-						<!-- Card Title 5 -->
-						<div class="card-header collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
-							<span class="title">Contact Us</span>
-							<span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-						</div>
-						<!-- Content for card 5 -->
-						<div id="collapseFive" class="collapse" data-parent="#accordionExample">
-							<div class="card-body">
-								<div class="row">
-									<p class="col-6"><i class="fa-solid fa-location-dot"></i> &nbsp 241 Gough Road <br>  &nbsp &nbsp &nbsp Markham, ON, Canada <br> &nbsp &nbsp &nbsp L3R 5B3</p>
-									<p class="col-6"><i class="fa-solid fa-phone"></i>  &nbsp 905-479-9754 <br> &nbsp &nbsp &nbsp Toll-free: 1-800-387-5173 <br> &nbsp &nbsp &nbsp Fax: 905-479-4869</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="container">
-						<div class="row mt-3">
-							<div class="col-xs-6 col-sm-6 text-center">
-								<p>© <script>document.write(new Date().getFullYear());</script> Signode Canada. All rights reserved.</p>
-							</div>
-							<div class="col-xs-6 col-sm-6 text-center">
-								<p><a href="#!" class="text-reset">Privacy Policy</a> &nbsp &nbsp &nbsp &nbsp <a href="#!" class="text-reset">Terms of Use</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+		<div id="footer"></div>
 
 
+		<!-- ******************************* JAVASCRIPT ************************************** -->
+
+		<!-- Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+		<!-- Page-specific javascript -->
 		<script src="js/animated-stats.js"></script>
 		<script src="js/search-bar.js"></script>
 
-
-		<!-- Bootstrap JavaScript -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<!-- Footer JavaScript -->
   		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

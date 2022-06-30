@@ -10,11 +10,11 @@ counters.forEach((counter) => {
 
         // get current rendered value
 		const data = +counter.innerText;
-        console.log("-endval: " + value + ", data: " + data);
+        // console.log("-endval: " + value + ", data: " + data);
 
 		// how frequently we update the displayed number
 		const period = duration/value;
-        console.log("period: " + period);
+        // console.log("period: " + period);
 
 
         // if we haven't reached the end value yet, keep incrementing
