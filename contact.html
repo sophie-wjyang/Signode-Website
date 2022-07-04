@@ -55,183 +55,166 @@
 		</div> <br><br>
 
 
-		<div class="container">
+		<div class="container pb-5">
 
 			<div class="row">
 	
-				<div class="col-xl-6 py-2">
-	
-					<form id="contact-form" method="post" action="contact.php" role="form">
-		
-						<div class="contact_form">
-	
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_name">First Name *</label>
-										<input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_lastname">Last Name *</label>
-										<input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_email">Email Address *</label>
-										<input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_tel">Phone *</label>
-										<input id="form_tel" type="tel" name="tel" class="form-control" required="required" data-error="".one number is required></input>
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							
-								<div class="col-md-12">
-									<div class="form-group">
-										<label>Company Name </label>
-										<input name="form_company_name" class="form-control">
-									</div>
-								</div>
-							
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_address1">Address Line 1 *</label>
-										<input id="form_address1" type="address" name="address1" class="form-control" required="required" data-error="Address is required.">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_address2">Address Line 2</label>
-										<input id="form_address2" type="address" name="address2" class="form-control">
-									</div>
-								</div>
-							
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_city">City</label>
-										<input id="form_city" type="city" name="city" class="form-control">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="form_province">Province </label>
-										<select id="form_province" name="province" class="form-control">
-											<option value=""></option>
-											<option value="Alberta">Alberta</option>
-											<option value="British Columbia">British Columbia</option>
-											<option value="Manitoba">Manitoba</option>
-											<option value="New Brunswick">New Brunswick</option>
-											<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-											<option value="Nova Scotia">Nova Scotia</option>
-											<option value="Ontario">Ontario</option>
-											<option value="Prince Edward Island">Prince Edward Island</option>
-											<option value="Quebec">Quebec</option>
-											<option value="Saskatchewan">Saskatchewan</option>
-										</select>
-									</div>
-								</div>
+				<div class="col-xl-6 col-lg-6 pb-5">
+                    
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="contact_form">
+        
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">First Name <span class="asterisk">*</span></label>
+                                            <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Last Name <span class="asterisk">*</span></label>
+                                            <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email Address <span class="asterisk">*</span></label>
+                                            <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_tel">Phone <span class="asterisk">*</span></label>
+                                            <input id="form_tel" type="tel" name="tel" class="form-control" required="required" data-error="".one number is required></input>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Company Name </label>
+                                            <input name="form_company_name" class="form-control">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_address1">Address Line 1 <span class="asterisk">*</span></label>
+                                            <input id="form_address1" type="address" name="address1" class="form-control" required="required" data-error="Address is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_address2">Address Line 2</label>
+                                            <input id="form_address2" type="address" name="address2" class="form-control">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_city">City <span class="asterisk">*</span></label>
+                                            <input id="form_city" type="city" name="city" class="form-control" required="required" data-error="City is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_province">Province/State <span class="asterisk">*</span></label>
+                                            <input id="form_province" type="province" name="province" class="form-control" required="required" data-error="Province is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
 
-                                <div class="col-md-6">
-									<div class="form-group">
-										<label for="form_postal">ZIP/Postal Code</label>
-										<input id="form_postal" type="postal" name="postal" class="form-control">
-									</div>
-								</div>
-							</div>
-							
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            
-							<div class="row">
-                                <div class="col-md-6">
-									<div class="form-group">
-										<label for="form_product_info">Products Information </label>
-										<select id="form_product_info" name="product_info" class="form-control">
-											<option value=""></option>
-											<option value="Strapping">Strapping</option>
-											<option value="Power Strapping Equipment">Power Strapping Equipment</option>
-											<option value="Strapping Tools">Strapping Tools</option>
-											<option value="Dunnage Bags">Dunnage Bags</option>
-											<option value="Angleboard">Angleboard</option>
-											<option value="Stretch Equipment or Film">Stretch Equipment or Film</option>
-											<option value="Printing Systems">Printing Systems</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<label for="form_message">Provide your comments and/or questions </label>
-										<textarea style="resize:none" id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-                                <div class="col-md-12">
-									<div class="form-group">
-										<label for="form_question">How did you hear about us? </label>
-										<textarea style="resize:none" id="form_question" name="question" class="form-control" rows="1"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<input type="submit" class="btn btn-success btn-send" value="Submit">
-								</div>
-							</div>
-						</div>
-	
-					</form>
-	
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_postal">Postal/ZIP Code <span class="asterisk">*</span></label>
+                                            <input id="form_postal" type="postal" name="postal" class="form-control" required="required" data-error="Postal/ZIP code is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_product_info">Products Information </label>
+                                            <select id="form_product_info" name="product_info" class="form-control" required="required" data-error="Products Information is required">
+                                                <option value=""></option>
+                                                <option value="Strapping">Strapping</option>
+                                                <option value="Power Strapping Equipment">Power Strapping Equipment</option>
+                                                <option value="Strapping Tools">Strapping Tools</option>
+                                                <option value="Dunnage Bags">Dunnage Bags</option>
+                                                <option value="Angleboard">Angleboard</option>
+                                                <option value="Stretch Equipment or Film">Stretch Equipment or Film</option>
+                                                <option value="Printing Systems">Printing Systems</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Provide your comments and/or questions </label>
+                                            <textarea style="resize:none" id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_question">How did you hear about us? </label>
+                                            <textarea style="resize:none" id="form_question" name="question" class="form-control" rows="1"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-send" value="Submit">
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </form>
 				</div>
 				<!-- /.6 -->
-                <div class="col-xl-6 pl-xl-5">
-                    <div class="container pl-xl-5 ml-xl-5 text-left">
-                            <h3><b>Markham</b></h3>
-                            <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
-                            <p>241 Gough Road <br> Markham, ON <br> L3R 5B3</p>
+                <div class="col-xl-6 col-lg-6 pl-xl-5 pl-lg-5">
+                    <div class="pl-xl-5 ml-xl-5">
+                    <h3><b>Markham</b></h3>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
+                    <p>241 Gough Road <br> Markham, ON <br> L3R 5B3</p>
 
-                            <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
-                            <p>Tel: 905-479-9754 <br> Toll-free: 1-800-387-5173 <br> Fax: 905-479-4869</p>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
+                    <p>Tel: 905-479-9754 <br> Toll-free: 1-800-387-5173 <br> Fax: 905-479-4869</p>
 
-                            <h6 class="border-bottom" style="color:#b43c25"><b>EMAIL</b></h6>
-                            <p>sales@signode.ca</p>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>EMAIL</b></h6>
+                    <p>sales@signode.ca</p>
 
-                            <br>
-                            <br>
+                    <br><br>
 
-                            <h3><b>Montreal</b></h3>
-                            <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
-                            <p>1760 55th Avenue <br> Lachine, QC <br> H8T 3J5</p>
+                    <h3><b>Montreal</b></h3>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
+                    <p>1760 55th Avenue <br> Lachine, QC <br> H8T 3J5</p>
 
-                            <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
-                            <p>Tel: 905-479-9754 <br> Toll-free: 1-800-387-5173 <br> Fax: 1-800-268-4021</p>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
+                    <p>Tel: 905-479-9754 <br> Toll-free: 1-800-387-5173 <br> Fax: 1-800-268-4021</p>
 
-                            <br>
-                            <br>
+                    <br><br>
 
-                            <h3><b>Vancouver</b></h3>
-                            <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
-                            <p>Unit 102, 19099-25th Avenue <br> Surrey, BC <br>V3S 3V2</p>
+                    <h3><b>Vancouver</b></h3>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>ADDRESS</b></h6>
+                    <p>Unit 102, 19099-25th Avenue <br> Surrey, BC <br>V3S 3V2</p>
 
-                            <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
-                            <p>Tel: 604-538-8331 <br> Toll-free: 1-800-387-5173 <br> Fax: 604-538-8354</p>
+                    <h6 class="border-bottom" style="color:#b43c25"><b>PHONE</b></h6>
+                    <p>Tel: 604-538-8331 <br> Toll-free: 1-800-387-5173 <br> Fax: 604-538-8354</p>
                     </div>
                 </div>
 			</div>
-			<!-- /.row-->
-
         </div>
 		
 

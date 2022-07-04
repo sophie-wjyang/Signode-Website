@@ -4,8 +4,9 @@
 /**************************************** GLOBAL *********************************************/
 
 /* global styling constants */
-:root{
+:root {
 	--clr-signode-red: #b73f27;
+	--clr-grey-background: #fafafa;
 
 	--ff-open-sans: "Open Sans", sans-serif;
 	--ff-source-sans: "Source Sans 3", sans-serif;
@@ -15,6 +16,10 @@
 	/* default font */
 	font-family: var(--ff-source-sans);
 	font-weight: 500;
+}
+
+body {
+	background-color: white;
 }
 
 .main-heading {
@@ -48,8 +53,6 @@
 	text-decoration: underline;
 }
 
-
-
 /************************************ HERO BANNER *************************************/
 
 /* background image */
@@ -64,7 +67,8 @@
 	color: white;
 }
 
-.banner-text h1, h1 span {
+.banner-text h1,
+h1 span {
 	font-family: var(--ff-open-sans);
 }
 
@@ -81,12 +85,12 @@
 	margin-bottom: 25px;
 }
 
-
 /* RESPONSIVE FONT SIZES */
 
 /* applies to screen width greater than 1200 */
 @media screen and (min-width: 1200px) {
-	.banner-text h1, h1 span {
+	.banner-text h1,
+	h1 span {
 		font-size: 65px;
 	}
 
@@ -95,8 +99,9 @@
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
-	.banner-text h1, h1 span {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.banner-text h1,
+	h1 span {
 		font-size: 55px;
 	}
 
@@ -105,8 +110,9 @@
 	}
 }
 
-@media screen and (max-width: 767px){
-	.banner-text h1, h1 span {
+@media screen and (max-width: 767px) {
+	.banner-text h1,
+	h1 span {
 		font-size: 45px;
 	}
 
@@ -115,10 +121,7 @@
 	}
 }
 
-
-
-/* RESPONSIVE CSS
-  -------------------------------------------------- */
+/* RESPONSIVE CSS */
 
 @media (min-width: 40em) {
 	/* Bump up size of carousel content */
@@ -157,7 +160,6 @@
 #stats .col {
 	margin-top: 100px;
 	margin-bottom: 100px;
-
 }
 
 #stats .stats-heading {
@@ -166,8 +168,7 @@
 	color: white;
 }
 
-#stats .stats-subheading{
+#stats .stats-subheading {
 	font-size: 18px;
 	color: white;
 }
-

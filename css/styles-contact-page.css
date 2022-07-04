@@ -1,21 +1,29 @@
 body {
-    font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 h1 {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 label {
-    color: #333;
+	color: #333;
 }
 
 .btn-send {
-    background-color: #b43c25;
+	color: white;
+	background-color: #b43c25;
+}
+.btn-send:hover {
+	color: white;
+	background-color: rgb(119, 37, 20);
 }
 
-
 .help-block.with-errors {
-    color: #ff5050;
-    margin-top: 5px;
+	color: #ff5050;
+	margin-top: 5px;
+}
+
+.asterisk{
+    color:#b43c25;
 }
