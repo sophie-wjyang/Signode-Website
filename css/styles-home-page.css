@@ -176,70 +176,34 @@ h1 span {
 
 /************************************ TESTIMONIALS *************************************/
 
-.testimonial3 {
-	font-family: "Montserrat", sans-serif;
-	color: #8d97ad;
-	font-weight: 300;
-  }
-  
-  .testimonial3 h1,
-  .testimonial3 h2,
-  .testimonial3 h3,
-  .testimonial3 h4,
-  .testimonial3 h5,
-  .testimonial3 h6 {
-	color: #3e4555;
-  }
-  
-  .testimonial3 .font-weight-medium {
-	font-weight: 500;
-  }
-  
-  .testimonial3 .bg-light {
-	background-color: #f4f8fa !important;
-  }
-  
-  .testimonial3 .subtitle {
-	color: #8d97ad;
-	line-height: 24px;
-  }
-  
-  .testimonial3 .testi3 .card-body {
-	padding: 40px;
-  }
-  
-  .testimonial3 .testi3 h6 {
-	line-height: 26px;
-  }
-  
-  .testimonial3 .testi3 .thumb-img img {
-	width: 60px;
-  }
-  
-  .testimonial3 .testi3 .customer {
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 500;
-  }
-  
-  .testimonial3 .card.card-shadow {
-	  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-	  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-  }
-  
-  .testimonial3 .font-10 {
-	  font-size: 10px;
-  }
-  
-  .testimonial3 .text-success {
-	  color: #2cdd9b !important;
-  }
-  
-  .testimonial3 .text-muted {
-	  color: #8d97ad !important;
-  }
-  
-  .testimonial3 .owl-theme .owl-dots .owl-dot.active span,
-  .testimonial3 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #316ce8;
-  }
+/* styling arrows */
+#carouselExampleIndicators .carousel-control-prev .fa-chevron-left{
+	font-size: 30px;
+	color: black;
+}
+
+#carouselExampleIndicators .carousel-control-next .fa-chevron-right{
+	font-size: 30px;
+	color: black;
+}
+
+/* styling slide indicators */
+#carouselExampleIndicators .carousel-indicators li{
+	background-color: black;
+}
+
+#carouselExampleIndicators .carousel-item{
+	width: 100%;
+	height: 400px;
+	background-color: rgb(255, 202, 202);
+	border: 1px solid black;
+}
+
+#carouselExampleIndicators .carousel-item .col{
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+	margin: 10px;
+	color: black;
+}
+
