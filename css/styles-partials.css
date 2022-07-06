@@ -67,14 +67,14 @@
 	padding-left: 15px;
 }
 
-/* show navbar one for all sizes greater than or equal to 992 */
+/* show navbar one for desktop */
 @media screen and (min-width: 992px) {
 	#navbar-one-custom {
 		display: block;
 	}
 }
 
-/* hide navbar one for all sizes less than or equal to 991 */
+/* hide navbar one for mobile */
 @media screen and (max-width: 991px) {
 	#navbar-one-custom {
 		display: none;
@@ -90,9 +90,10 @@
 	background-color: black;
 }
 
-/* dropdown menu background*/
+/* dropdown menu*/
 #navbar-two-custom .dropdown-menu{
 	background-color: black;
+	/* margin when clicking a navbar category */
 	margin-top: 9px;
 	border-radius: 0;
 	padding: 0;
@@ -102,6 +103,8 @@
 @media screen and (min-width: 992px) {
 	#navbar-two-custom .nav-item:hover .dropdown-menu{
 		display: block;
+		margin-top: 0; 
+		padding-top: 9px;
 	}
 }
 
@@ -153,7 +156,6 @@
 .custom-toggler .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 
 /************************************ NAVIGATION BAR SEARCH *************************************/
 
@@ -218,7 +220,7 @@
 
 /* SEARCH BOX MOBILE */
 #search-box-mobile{
-	padding-left: 7px;
+	margin-bottom: 15px;
 }
 
 #search-box-mobile input{
