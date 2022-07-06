@@ -3,6 +3,7 @@
 /* global styling constants */
 :root{
 	--clr-signode-red: #b73f27;
+	--clr-hover-dark-red: #802d1d;
 
 	--ff-open-sans: "Open Sans", sans-serif;
 	--ff-source-sans: "Source Sans 3", sans-serif;
@@ -83,17 +84,68 @@
 
 /************************************ NAVIGATION BAR TWO *************************************/
 
-/* BACKGROUND AND TEXT */
+/* NAVBAR STYLES */
+/* navbar background*/
 #navbar-two-custom {
 	background-color: black;
-	font-size: 16px;
 }
 
+/* dropdown menu background*/
+#navbar-two-custom .dropdown-menu{
+	background-color: black;
+	margin-top: 9px;
+	border-radius: 0;
+	padding: 0;
+}
+
+/* dropdown menu appears while hovering only for desktop screen size */
+@media screen and (min-width: 992px) {
+	#navbar-two-custom .nav-item:hover .dropdown-menu{
+		display: block;
+	}
+}
+
+/* categories on navbar (home, company, industries, etc.) */
 #navbar-two-custom .nav-link {
 	font-family: var(--ff-open-sans);
 	color: white;
+	border-bottom: 4px solid transparent;
 }
 
+#navbar-two-custom .nav-link:hover {
+	color: var(--clr-signode-red);
+}
+
+/* red bottom border only appears for non-dropdown items */
+@media screen and (min-width: 992px) {
+	#navbar-two-custom .nav-link.hover-border:hover {
+		border-bottom: 4px solid var(--clr-signode-red);
+	}
+}
+
+
+/* NAVBAR DROPDOWN STYLES */
+#navbar-two-custom .nav-item .dropdown-menu .dropdown-item {
+	font-family: var(--ff-source-sans);
+	font-size: 15px;
+	color: white;
+	font-weight: 500;
+	padding: 7px 15px;
+}
+
+#navbar-two-custom .nav-item .dropdown-menu .dropdown-item:hover {
+	/* override built in hover styling */
+	background-color: black;
+	color: var(--clr-signode-red);
+
+}
+
+#navbar-two-custom .nav-item .dropdown-menu:last-child {
+	padding-bottom: 7px;
+}
+
+
+/* navbar toggler */
 #navbar-two-custom .navbar-toggler {
 	border: none;
 }
@@ -105,6 +157,7 @@
 
 /************************************ NAVIGATION BAR SEARCH *************************************/
 
+/* SEARCH BOX DESKTOP */
 /* entire search box */
 #search-box-desktop {
 	position: relative;
@@ -163,20 +216,70 @@
 	cursor: pointer;
 }
 
-/* RESPONSIVE BREAKPOINTS */
+/* SEARCH BOX MOBILE */
+#search-box-mobile{
+	padding-left: 7px;
+}
+
+#search-box-mobile input{
+	margin-right: 5px;
+	border: none;
+	padding: 10px;
+}
+
+#search-box-mobile button{
+	background-color: var(--clr-signode-red);
+	color: white;
+	border: none;
+}
+
+#search-box-mobile button:hover{
+	background-color: var(--clr-hover-dark-red);
+	border: none;
+}
+
+#search-box-mobile button:active{
+	border: none;
+	box-shadow: none;
+}
+
+
+/* RESPONSIVE BREAKPOINTS: WHICH SEARCH BOX TO DISPLAY */
+@media screen and (min-width: 992px) {
+	#search-box-desktop {
+		display: "";
+	}
+
+	#search-box-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#search-box-mobile {
+		display: "";
+	}
+
+	#search-box-desktop {
+		display: none;
+	}
+}
+
+/* RESPONSIVE BREAKPOINTS: LENGTH OF EXPANDED SEARCH BAR ANIMATION */
 @media screen and (min-width: 992px) and (max-width: 1199px){
 	#search-input:focus {
 		/* expanded width */
-		width: 720px;
+		width: 710px;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	#search-input:focus {
 		/* expanded width */
-		width: 900px;
+		width: 890px;
 	}
 }
+
 
 
 /************************ DESKTOP FOOTER *************************************/

@@ -6,6 +6,7 @@
 /* global styling constants */
 :root {
 	--clr-signode-red: #b73f27;
+	--clr-hover-dark-red: #802d1d;
 
 	--ff-open-sans: "Open Sans", sans-serif;
 	--ff-source-sans: "Source Sans 3", sans-serif;
@@ -98,7 +99,7 @@
 }
 
 #jobs-section .card .card-body .apply-button:hover {
-	background-color: #802d1d;
+	background-color: var(--clr-hover-dark-red);
 }
 
 #jobs-section .card .card-body .view-button {
