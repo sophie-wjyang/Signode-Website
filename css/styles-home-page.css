@@ -103,22 +103,22 @@ h1 span {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.banner-text h1,
 	h1 span {
-		font-size: 55px;
+		font-size: 60px;
 	}
 
 	.banner-text p {
-		font-size: 18px;
+		font-size: 19px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.banner-text h1,
 	h1 span {
-		font-size: 45px;
+		font-size: 55px;
 	}
 
 	.banner-text p {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
@@ -153,37 +153,66 @@ h1 span {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	padding-top: 20px;
-	padding-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
+#solutions-section .featurette-heading{
+	margin-top: 40px;
+}
+
+/* subheading */
 #solutions-section .sub-heading{
 	color: white;
 }
 
+/* heading */
 #solutions-section .main-heading{
 	color: var(--clr-signode-red);
 }
 
+/* process icons */
 #solutions-section .process-icon{
 	font-size: 15px;
 	padding-bottom: 5px;
 	width: 100px;
 }
 
+/* process icon label */
 #solutions-section h3 b{
 	color: var(--clr-signode-red);
 	font-family: "Zilla Slab";
 	font-size: 23px;
 }
 
-#solutions-section p{
-	margin-bottom: 30px;
+#solutions-section .col-12, .col-md {
+	margin-top: 30px !important;
+	margin-bottom: 30px !important;
+}
 
+#solutions-section p{
 	color: white;
 	font-size: 15px;
 	font-weight: 400;
 }
+
+/* MOBILE */
+
+/* text padding */
+@media screen and (max-width: 767px) {
+	#solutions-section .col-sm-12 p{
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+/* reduce padding between stacked columns */
+@media screen and (max-width: 767px) {
+	#solutions-section .col-sm-12 {
+		padding: 0;
+	}
+}
+
 
 /************************************ INDUSTRIES *************************************/
 
@@ -199,7 +228,7 @@ h1 span {
 	background: var(--clr-signode-red);
 }
 
-#stats .col {
+#stats .col-12, .col-md {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
@@ -215,6 +244,22 @@ h1 span {
 	color: white;
 }
 
+/* reduce padding between stacked columns */
+@media screen and (max-width: 768px) {
+	#stats .col-12 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#stats .col-12:first-child {
+		margin-top: 50px;
+	}
+
+	#stats .col-12:last-child {
+		margin-bottom: 70px;
+	}
+
+}
 
 /************************************ TESTIMONIALS *************************************/
 
