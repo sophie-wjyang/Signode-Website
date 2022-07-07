@@ -63,28 +63,6 @@
 }
 
 
-/************************************ MISSION AND VISION *************************************/
-
-/* RESPONSIVE BREAKPOINTS */
-@media screen and (min-width: 768px){
-	#mission-vision-section .desktop {
-		display: "";
-	}
-
-	#mission-vision-section .mobile {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 767px){
-	#mission-vision-section .desktop {
-		display: none;
-	}
-
-	#mission-vision-section .mobile {
-		display: "";
-	}
-}
 
 
 /************************************ VALUES *************************************/
@@ -125,50 +103,4 @@
 	font-weight: 300;
 }
 
-
-/* RESPONSIVE BREAKPOINTS */
-/* desktop */
-@media screen and (min-width: 992px){
-	#values-section #values-desktop {
-		display: "";
-	}
-
-	#values-section #values-tablet {
-		display: none;
-	}
-
-	#values-section #values-mobile {
-		display: none;
-	}
-}
-
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 991px){
-	#values-section #values-desktop {
-		display: none;
-	}
-
-	#values-section #values-tablet {
-		display: "";
-	}
-
-	#values-section #values-mobile {
-		display: none;
-	}
-}
-
-/* mobile */
-@media screen and (max-width: 767px){
-	#values-section #values-desktop {
-		display: none;
-	}
-
-	#values-section #values-tablet {
-		display: none;
-	}
-
-	#values-section #values-mobile {
-		display: "";
-	}
-}
 
