@@ -90,7 +90,7 @@
 	background-color: black;
 }
 
-/* dropdown menu*/
+/* dropdown menu styling */
 #navbar-two-custom .dropdown-menu{
 	background-color: black;
 	/* margin when clicking a navbar category */
@@ -140,7 +140,6 @@
 	/* override built in hover styling */
 	background-color: black;
 	color: var(--clr-signode-red);
-
 }
 
 #navbar-two-custom .nav-item .dropdown-menu:last-child {
