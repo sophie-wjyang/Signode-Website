@@ -102,6 +102,10 @@
 	background-color: var(--clr-hover-dark-red);
 }
 
+#jobs-section .card .card-body .apply-button:focus {
+	outline: none;
+}
+
 #jobs-section .card .card-body .view-button {
 	border: none;
 	background-color: #c6c6c6;
@@ -122,6 +126,10 @@
 
 #jobs-section .card .card-body .view-button:hover {
 	background-color: #969696;
+}
+
+#jobs-section .card .card-body .view-button:focus {
+	outline: none;
 }
 
 #jobs-section .card .card-body .date-text {
@@ -149,3 +157,75 @@
 	}
 }
 
+/************************************ MODALS *************************************/
+
+#jobs-section .modal{
+	font-family: var(--ff-source-sans);
+	font-size: 14px;
+}
+
+#jobs-section .modal-header{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#jobs-section .modal-body{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* headers styling */
+#jobs-section .modal .modal-body h1{
+	font-size: 20px;
+	font-weight: BOLD;
+	margin-bottom: 13px;
+}
+
+#jobs-section .modal .modal-body h3{
+	font-size: 14px;
+	font-weight: BOLD;
+	margin-bottom: 2px;
+}
+
+#jobs-section .modal .modal-body p{
+	margin-bottom: 20px;
+}
+
+#jobs-section .modal .modal-body p:last-child{
+	margin-bottom: 0px;
+}
+
+/* fix extra padding around lists */
+#jobs-section .modal .modal-body ul{
+	transform: translate(-15px, -10px);
+
+}
+
+/* close and apply buttons */
+#jobs-section .modal-footer .close-button{
+	background-color: #c6c6c6;
+	color: black;
+	font-weight: 500;
+}
+
+#jobs-section .modal-footer .close-button:hover{
+	background-color: #969696;
+}
+
+#jobs-section .modal-footer .close-button:focus{
+	box-shadow: none;
+}
+
+#jobs-section .modal-footer .apply-button{
+	background-color: var(--clr-signode-red);
+	color: white;
+	font-weight: 400;
+}
+
+#jobs-section .modal-footer .apply-button:hover{
+	background-color: var(--clr-hover-dark-red);
+}
+
+#jobs-section .modal-footer .apply-button:focus{
+	box-shadow: none;
+}

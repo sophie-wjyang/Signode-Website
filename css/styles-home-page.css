@@ -266,6 +266,8 @@ h1 span {
 #carouselExampleIndicators .carousel-item{
 	width: 100%;
 	height: 400px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 #carouselExampleIndicators .carousel-item .row{
