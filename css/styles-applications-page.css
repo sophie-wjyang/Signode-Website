@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
 
 /**************************************** GLOBAL *********************************************/
 
 /* global styling constants */
-:root {
+:root{
 	--clr-signode-red: #b73f27;
-	--clr-grey-background: #fafafa;
 
 	--ff-open-sans: "Open Sans", sans-serif;
 	--ff-source-sans: "Source Sans 3", sans-serif;
@@ -17,10 +15,6 @@
 	/* default font */
 	font-family: var(--ff-source-sans);
 	font-weight: 500;
-}
-
-body {
-	background-color: white;
 }
 
 .main-heading {
@@ -54,7 +48,6 @@ body {
 	text-decoration: underline;
 }
 
-
 /************************************ BREADCRUMB *************************************/
 .breadcrumb{
 	background-color: transparent;
@@ -73,37 +66,19 @@ body {
 	font-size: 18px;
 }
 
-
-/************************************ PRODUCT DETAILS *************************************/
+/************************************ APPLICATIONS *************************************/
 
 .description{
 	font-size: 17px;
 	color:rgb(83, 83, 83);
 }
 
-.page-label{
+#applications-gallery .page-label{
 	font-family: var(--ff-open-sans);
 }
 
-.product-name{
-	font-size: 40px;
-	font-weight: 600;
-}
-
-h2.heading{
-	font-size: 30px;
-	font-weight: 600;
-}
-
-
-/************************************ RELATED PRODUCTS *************************************/
-
-.gallery-title {
+.gallery-text {
 	font-family: var(--ff-open-sans);
 	color: black;
 	font-size: 18px;
-}
-
-.gallery-description{
-	font-size: 15px;
 }
