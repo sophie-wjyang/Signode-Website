@@ -54,7 +54,7 @@ body {
 	text-decoration: underline;
 }
 
-/************************************ SERVICES *************************************/
+/************************************ BLOCKQUOTE *************************************/
 
 .blockquote{
 	background: var(--clr-signode-red);
@@ -69,6 +69,14 @@ body {
 	font-size: 22px;
 }
 
+.divider-dash-white{
+	height: 4px;
+	width: 50px;
+	background-color: white;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
 /************************************ SERVICES *************************************/
 
 .service-heading{
@@ -81,4 +89,9 @@ body {
 
 .service-image{
 	padding: 0;
+	object-fit: cover;
+}
+
+.service-image img{
+	object-fit: cover;
 }

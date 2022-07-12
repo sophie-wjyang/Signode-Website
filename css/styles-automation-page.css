@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
+
+/**************************************** GLOBAL *********************************************/
+
+/* global styling constants */
+:root {
+	--clr-signode-red: #b73f27;
+	--clr-grey-background: #fafafa;
+
+	--ff-open-sans: "Open Sans", sans-serif;
+	--ff-source-sans: "Source Sans 3", sans-serif;
+}
+
+* {
+	/* default font */
+	font-family: var(--ff-source-sans);
+	font-weight: 500;
+}
+
+body {
+	background-color: white;
+}
+
+.main-heading {
+	font-family: var(--ff-open-sans);
+	font-size: 50px;
+}
+
+.sub-heading {
+	font-family: var(--ff-source-sans);
+	color: var(--clr-signode-red);
+	font-style: italic;
+}
+
+.text-content {
+	font-family: var(--ff-source-sans);
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+}
+
+.divider-dash {
+	height: 5px;
+	width: 60px;
+	background-color: var(--clr-signode-red);
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.hyperlink {
+	color: white;
+	text-decoration: underline;
+}
+
+
+/************************************ PROCESS *************************************/
+
+#process-section{
+	/* background-image: url("../images/automation-page/process-background.png"); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#process-section .featurette-heading{
+	margin-top: 40px;
+}
+
+/* subheading */
+#process-section .sub-heading{
+	color: var(--clr-signode-red);
+}
+
+/* heading */
+#process-section .main-heading{
+	color: black;
+}
+
+/* process icons */
+#process-section .fa-solid{
+	font-size: 32px;
+	padding-bottom: 20px;
+	color: var(--clr-signode-red);
+	width: 100px;
+}
+
+/* process icon label */
+#process-section h3 b{
+	color: black;
+	/* font-family: "Zilla Slab"; */
+	font-size: 22px;
+}
+
+#process-section .col-12, .col-md {
+	margin-top: 30px !important;
+	margin-bottom: 30px !important;
+}
+
+#process-section p{
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/* MOBILE */
+
+/* text padding */
+@media screen and (max-width: 767px) {
+	#process-section .col-sm-12 p{
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+/* reduce padding between stacked columns */
+@media screen and (max-width: 767px) {
+	#process-section .col-sm-12 {
+		padding: 0;
+	}
+}
+
+
+
+/************************************ VIDEOS *************************************/
+
+.col-left-video{
+	padding: 0;
+	margin: 0;
+	border: 2px solid pink;
+}
+
+.col-left-video iframe{
+	padding: 0;
+	margin: 0;
+	border: 2px solid pink;
+}
+
+.col-right-text{
+	background: var(--clr-signode-red);
+	padding: 100px;
+}
+
+.automation-feature-header{
+	font-size: 33px;
+	color: white;
+}
+
+.automation-feature-description{
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.divider-dash-white{
+	height: 4px;
+	width: 50px;
+	background-color: white;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+/* styling arrows */
+i.fa-chevron-left, i.fa-chevron-right{
+	font-size: 18px;
+	color: var(--clr-signode-red);
+	padding: 30px;
+}
+
+.carousel-control-next span, .carousel-control-prev span{
+	background-color: rgb(255, 255, 255);
+	border-radius: 100%;
+}
+
+
+/************************************ FEATURED SOLUTIONS *************************************/
+
+.description{
+	font-size: 17px;
+	color:rgb(83, 83, 83);
+}
+
+.service-heading{
+	font-weight: 600;
+}
+
+.service-text{
+	padding: 50px;
+}
+
+.service-image{
+	padding: 0;
+	object-fit: cover;
+}
+
+.service-image img{
+	object-fit: cover;
+}
+
