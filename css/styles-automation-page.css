@@ -128,28 +128,40 @@ body {
 
 /************************************ VIDEOS *************************************/
 
+/* left side: video */
 .col-left-video{
 	padding: 0;
 	margin: 0;
-	border: 2px solid pink;
+	/* sets height of video frame, and text column will match */
+	height: 400px;
 }
 
 .col-left-video iframe{
 	padding: 0;
 	margin: 0;
-	border: 2px solid pink;
 }
 
+/* right side: text */
 .col-right-text{
 	background: var(--clr-signode-red);
-	padding: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
+/* add padding to right column for mobile */
+@media screen and (max-width: 992px) {
+	.col-right-text{
+		padding: 100px;
+	}
+}
+
+/* text header */
 .automation-feature-header{
 	font-size: 33px;
 	color: white;
 }
 
+/* text description */
 .automation-feature-description{
 	color: white;
 	font-size: 20px;
