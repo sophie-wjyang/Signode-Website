@@ -13,7 +13,7 @@
 		<script src="https://kit.fontawesome.com/065b6a01b6.js" crossorigin="anonymous"></script>
 
 		<!-- external stylesheet -->
-		<link rel="stylesheet" href="css/styles-applications-page.css" />
+		<link rel="stylesheet" href="../css/styles-applications-page.css" />
 
 		<!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -22,9 +22,9 @@
 
         <script>
             $(function(){
-                $('#navbar-one').load('partials/navbar-one.html');
-                $('#navbar-two').load('partials/navbar-two.html');
-                $('#footer').load('partials/footer.html');
+                $('#navbar-one').load('../partials/navbar-one.html');
+                $('#navbar-two').load('../partials/navbar-two.html');
+                $('#footer').load('../partials/footer.html');
             });
         </script>
     </head>
@@ -52,7 +52,7 @@
 				<!-- breadcrumb -->
 				  <nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
-					  <li class="breadcrumb-item"><a href="industries.html">Industries</a></li>
+					  <li class="breadcrumb-item"><a href="../industries.html">Industries</a></li>
 					  <li class="breadcrumb-item active" aria-current="page"><a><b>Distribution / 3PL</b></a></li>
 					</ol>
 				  </nav>
@@ -81,22 +81,24 @@
 
 				<!-- Gallery item -->
 				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-				  <div class="bg-white rounded shadow-sm"><img src="images/distribution-page/ecommerce.svg" alt="" class="img-fluid card-img-top">
-					<div class="p-4">
-					  <h5> <a href="#" class="gallery-text">eCommerce</a></h5>
-					</div>
-				  </div>
-				</div>
-				
-				<!-- Gallery item -->
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-					<div class="bg-white rounded shadow-sm"><img src="images/distribution-page/warehouse.svg" alt="" class="img-fluid card-img-top">
+					<div class="bg-white rounded shadow-sm application-button">
+						<a href=""><a href=""><img src="../images/distribution-page/ecommerce.svg" alt="" href="" class="img-fluid card-img-top"></a>
 					  <div class="p-4">
-						<h5> <a href="#" class="gallery-text">Warehouse & Logistics</a></h5>
+						<h5> <a href="#" class="gallery-text">eCommerce</a></h5>
 					  </div>
 					</div>
 				  </div>
-				  <!-- End -->
+				  
+				  <!-- Gallery item -->
+				  <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+					  <div class="bg-white rounded shadow-sm application-button">
+						  <a href="specific-products.html"><img src="../images/distribution-page/warehouse.svg" alt="" class="img-fluid card-img-top"></a>
+						<div class="p-4">
+						  <h5> <a href="specific-products.html" class="gallery-text">Warehouse & Logistics</a></h5>
+						</div>
+					  </div>
+					</div>
+					<!-- End -->
 			</div>
 		</div>
  

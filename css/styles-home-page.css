@@ -233,6 +233,18 @@ h1 span {
 	text-decoration: none;
 }
 
+/************************************ PRODUCTS *************************************/
+
+#product-section{
+	background-color: lavender;
+
+}
+
+#product-section .col-4{
+	border: 2px solid pink;
+}
+
+
 /************************************ ANIMATED STATS *************************************/
 
 #stats {
