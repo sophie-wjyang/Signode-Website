@@ -58,7 +58,7 @@
 }
 
 #navbar-one-custom .navbar-text,
-.fa-solid {
+#navbar-one-custom .fa-solid {
 	font-size: 13px;
 }
 
@@ -88,6 +88,7 @@
 /* navbar background*/
 #navbar-two-custom {
 	background-color: black;
+	transform: translate(0, -1px);
 }
 
 /* dropdown menu styling */

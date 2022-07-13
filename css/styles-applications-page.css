@@ -77,8 +77,18 @@
 	font-family: var(--ff-open-sans);
 }
 
+.application-button:hover{
+	box-shadow: 0 10px 20px 3px rgb(232, 232, 232) !important;
+	transition: box-shadow 0.35s;
+}
+
 .gallery-text {
 	font-family: var(--ff-open-sans);
 	color: black;
 	font-size: 18px;
+}
+
+.gallery-text:hover{
+	color: var(--clr-signode-red);
+	text-decoration: none;
 }
