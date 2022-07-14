@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
+
+/**************************************** GLOBAL *********************************************/
+
+/* global styling constants */
+:root {
+	--clr-signode-red: #b73f27;
+	--clr-grey-background: #fafafa;
+
+	--ff-open-sans: "Open Sans", sans-serif;
+	--ff-source-sans: "Source Sans 3", sans-serif;
+}
+
+* {
+	/* default font */
+	font-family: var(--ff-source-sans);
+	font-weight: 500;
+}
+
+body {
+	background-color: white;
+}
+
+.main-heading {
+	font-family: var(--ff-open-sans);
+	font-size: 50px;
+}
+
+.sub-heading {
+	font-family: var(--ff-source-sans);
+	color: var(--clr-signode-red);
+	font-style: italic;
+}
+
+.text-content {
+	font-family: var(--ff-source-sans);
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+}
+
+.divider-dash {
+	height: 5px;
+	width: 60px;
+	background-color: var(--clr-signode-red);
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.hyperlink {
+	color: white;
+	text-decoration: underline;
+}
+
+/************************************ CONTENT *************************************/
+/* box-shadow: 0 5px 10px 1px rgb(232, 232, 232); */
+
+#sale-section .card {
+	background-color: white;
+}
+
+#sale-section .card-body {
+	margin: 15px;
+}
+
+/* product name */
+#sale-section .card .card-body .card-title a{
+	color: black;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+#sale-section .card .card-body .card-title a:hover {
+	color: var(--clr-signode-red);
+	text-decoration: none;
+}
+
+/* product price */
+#sale-section .card .card-body .price {
+	margin-bottom: 5px;
+}
+
+#sale-section .card .card-body .sale-price {
+	font-size: 15px;
+	color: var(--clr-signode-red);
+}
+
+#sale-section .card .card-body .original-price {
+	font-size: 15px;
+	color: grey;
+	text-decoration: line-through;
+}
+
+/* product description */
+#sale-section .card .card-body .card-text {
+	font-family: var(--ff-source-sans);
+	font-weight: 400;
+	font-size: 15px;
+	padding-bottom: 13px;
+}
+
+
