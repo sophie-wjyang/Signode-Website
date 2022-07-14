@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lightbox2": "^2.11.3"
+    "lightbox2": "^2.11.3",
+    "venobox": "^2.0.4"
   }
 }
