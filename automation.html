@@ -15,9 +15,14 @@
 		<link rel="stylesheet" href="css/styles-automation-page.css" />
 		<link rel="stylesheet" href="venobox/dist/venobox.min.css" />
 
-
 		<!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+		<!-- lightbox -->
+		<link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+    
+		<!-- venobox -->
+		<link rel="stylesheet" href="node_modules/venobox/dist/venobox.min.css" />
 
         <title>Signode Canada</title>
 
@@ -150,12 +155,12 @@
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col col-left-video">
-							<a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=mrvWHfH5pm0">Youtubeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</a>
-							
-							<!-- <iframe class="w-100 h-100" src="https://www.youtube.com/embed/4XO-hojiTWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+							<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/7Vm3HTmoxm0">
+								<img src="images/services-page/video-thumbnail.png" alt="" class="venobox-placeholder-image w-100">
+							  </a>
 						</div>
 						<div class="col-12 col-lg-6 col-right-text d-flex flex-column justify-content-center align-items-start">
-							<h2 class="automation-feature-header">Discover our end-of-line packaging solutions</h2>
+							<h2 class="automation-feature-header">1. Discover our end-of-line packaging solutions</h2>
 							<div class="divider-dash-white"></div> 
 							<p class="automation-feature-description">See the advantages of turn-key installation, one-supplier convenience, and product versatility.</p>
 						  </div>
@@ -168,7 +173,7 @@
 						  <iframe class="w-100 h-100" src="https://www.youtube.com/embed/Ay6UTgOP26g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					  </div>
 					  <div class="col-12 col-lg-6 col-right-text d-flex flex-column justify-content-center align-items-start">
-						<h2 class="automation-feature-header">Discover our end-of-line packaging solutions</h2>
+						<h2 class="automation-feature-header">2. Discover our end-of-line packaging solutions</h2>
 						<div class="divider-dash-white"></div> 
 						<p class="automation-feature-description">See the advantages of turn-key installation, one-supplier convenience, and product versatility.</p>
 					  </div>
@@ -181,7 +186,7 @@
 						<iframe class="w-100 h-100" height="400" src="https://www.youtube.com/embed/TuTmrHF_tOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-12 col-lg-6 col-right-text d-flex flex-column justify-content-center align-items-start">
-						<h2 class="automation-feature-header">Discover our end-of-line packaging solutions</h2>
+						<h2 class="automation-feature-header">3. Discover our end-of-line packaging solutions</h2>
 						<div class="divider-dash-white"></div> 
 						<p class="automation-feature-description">See the advantages of turn-key installation, one-supplier convenience, and product versatility.</p>
 					  </div>
@@ -194,7 +199,7 @@
 						<iframe class="w-100 h-100" height="400" src="https://www.youtube.com/embed/ujByr-41z4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-12 col-lg-6 col-right-text d-flex flex-column justify-content-center align-items-start">
-						<h2 class="automation-feature-header">Discover our end-of-line packaging solutions</h2>
+						<h2 class="automation-feature-header">4. Discover our end-of-line packaging solutions</h2>
 						<div class="divider-dash-white"></div> 
 						<p class="automation-feature-description">See the advantages of turn-key installation, one-supplier convenience, and product versatility.</p>
 					  </div>
@@ -326,11 +331,19 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<script src="venobox/dist/venobox.min.js"></script>
+		<!-- Lightbox js -->
+		<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+		<!-- Venobox js -->
+		<script src="node_modules/venobox/dist/venobox.min.js"></script>
+	
+		<!-- Venobox script -->
 		<script>
-			new VenoBox({
- 				selector: '.venobox'
-			});
+		  new VenoBox({
+			selector: '.venobox',
+			maxWidth: '70%',
+			spinner: 'wander'
+		  });
 		</script>
 	</body>
 </html>
