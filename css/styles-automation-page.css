@@ -136,10 +136,6 @@ body {
 	height: 400px;
 }
 
-.col-left-video iframe{
-	padding: 0;
-	margin: 0;
-}
 
 /* right side: text */
 .col-right-text{
@@ -186,6 +182,39 @@ i.fa-chevron-left, i.fa-chevron-right{
 .carousel-control-next span, .carousel-control-prev span{
 	background-color: rgb(255, 255, 255);
 	border-radius: 100%;
+}
+
+
+/************************************ VENOBOX *************************************/
+
+.venobox{
+	position: relative;
+}
+
+.play-button{
+	position: absolute;
+	font-size: 75px;
+	/* color: var(--clr-signode-red); */
+	color: white;
+	margin: 0;
+	top: 50%; 
+	left: 50%; 
+	/* the transformation accounts for the width and height of the icon itself */
+	transform: translate(-50%,-50%);
+
+}
+
+.venobox-placeholder-image{
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 10px;
+	object-fit: cover;
+	border-radius: 0;
+
+}
+
+.venobox:hover .venobox-placeholder-image{
+	filter: brightness(60%);
+	transition: filter 0.2s;
 }
 
 
