@@ -80,3 +80,7 @@
 #specific-products-section .card{
 	background-color: white;
 }
+
+.card-img-right{
+	object-fit: cover;
+}

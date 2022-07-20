@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
+
+/**************************************** GLOBAL *********************************************/
+
+/* global styling constants */
+:root {
+	--clr-signode-red: #b73f27;
+	--clr-hover-dark-red: #802d1d;
+	--clr-grey-background: #fafafa;
+
+	--ff-open-sans: "Open Sans", sans-serif;
+	--ff-source-sans: "Source Sans 3", sans-serif;
+}
+
+* {
+	/* default font */
+	font-family: var(--ff-source-sans);
+	font-weight: 500;
+}
+
+body {
+	background-color: white;
+}
+
+.main-heading {
+	font-family: var(--ff-open-sans);
+	font-size: 50px;
+}
+
+.sub-heading {
+	font-family: var(--ff-source-sans);
+	color: var(--clr-signode-red);
+	font-style: italic;
+}
+
+.text-content {
+	font-family: var(--ff-source-sans);
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+}
+
+.divider-dash {
+	height: 5px;
+	width: 60px;
+	background-color: var(--clr-signode-red);
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.hyperlink {
+	color: white;
+	text-decoration: underline;
+}
+
+/************************************ SOLUTIONS *************************************/
+
+.heading{
+	font-size: 27px;
+}
+
+
+#solutions-section .featurette-heading{
+	margin-top: 40px;
+}
+
+/* process icons */
+#solutions-section .process-icon{
+	padding-bottom: 5px;
+	width: 150px;
+}
+
+#solutions-section .process-icon:hover{
+	transform: scale(0.94);
+	cursor: pointer;
+}
+
+/* process icon label */
+#solutions-section h3 b{
+	color: var(--clr-signode-red);
+	font-family: "Zilla Slab";
+	font-size: 23px;
+}
+
+#solutions-section h3 b:hover{
+	color: var(--clr-hover-dark-red);
+	cursor: pointer;
+}
+
+/* #solutions-section .col-12, .col-md {
+	margin-top: 30px !important;
+	margin-bottom: 30px !important;
+} */
+
+/* MOBILE */
+
+/* text padding */
+@media screen and (max-width: 767px) {
+	#solutions-section .col-sm-12 p{
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+/* reduce padding between stacked columns */
+@media screen and (max-width: 767px) {
+	#solutions-section .col-sm-12 {
+		padding: 0;
+	}
+}
