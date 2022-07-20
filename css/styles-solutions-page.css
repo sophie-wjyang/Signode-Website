@@ -89,10 +89,10 @@ body {
 	cursor: pointer;
 }
 
-/* #solutions-section .col-12, .col-md {
-	margin-top: 30px !important;
-	margin-bottom: 30px !important;
-} */
+#solutions-section a:hover{
+	text-decoration: none !important;
+}
+
 
 /* MOBILE */
 
