@@ -20,7 +20,7 @@
 }
 
 body {
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 
 .main-heading {
@@ -284,17 +284,9 @@ h1 span {
 
 /************************************ TESTIMONIALS *************************************/
 
-
-/* testimonials background */
-#carouselExampleIndicators .carousel-item{
-	width: 100%;
-	height: 400px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-}
-
-#carouselExampleIndicators .carousel-item .row{
-	height: 300px;
+/* extra padding so carousel indicator doesn't overlap text */
+#carouselExampleIndicators .carousel-inner{
+	padding-bottom: 80px;
 }
 
 /* testimonial columns */
@@ -304,15 +296,31 @@ h1 span {
 	color: black;
 }
 
+#carouselExampleIndicators .carousel-indicators{
+	position: relative;
+	
+}
+
+#carouselExampleIndicators .carousel-control-prev{
+	position: absolute;
+}
+
+
+
+
+
+
 /* styling arrows */
 #carouselExampleIndicators .carousel-control-prev .fa-chevron-left{
 	font-size: 30px;
 	color: black;
+	padding-top: 5px;
 }
 
 #carouselExampleIndicators .carousel-control-next .fa-chevron-right{
 	font-size: 30px;
 	color: black;
+	padding-top: 5px;
 }
 
 /* styling slide indicators */
@@ -320,10 +328,15 @@ h1 span {
 	background-color: black;
 }
 
+/* TESTIMONIAL CONTENT STYLING */
 /* styling quotations */
 #carouselExampleIndicators .fa-solid.fa-quote-left{
 	font-size: 40px;
 	padding-bottom: 15px;
+}
+
+#carouselExampleIndicators #testimonial-text, #testimonial-source, .fa-solid.fa-quote-left{
+	color: black;
 }
 
 /* customer review */
@@ -344,52 +357,3 @@ h1 span {
 	color: var(--clr-signode-red);
 }
 
-/* @media screen and (min-width: 1200px) {
-	#carouselExampleIndicators{
-		display: "";
-	}
-} */
-
-/* RESPONSIVE SIZING */
-
-/* @media screen and (min-width: 1200px) {
-	.testimonials-xl{
-		display: "";
-	}
-
-	.testimonials-lg{
-		display: none;
-	}
-
-	.testimonials-md{
-		display: none;
-	}
-}
-
-@media screen and (max-width: 992px) and (min-width: 1200px) {
-	.testimonials-xl{
-		display: none;
-	}
-
-	.testimonials-lg{
-		display: "";
-	}
-
-	.testimonials-md{
-		display: none;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.testimonials-xl{
-		display: none;
-	}
-
-	.testimonials-lg{
-		display: none;
-	}
-
-	.testimonials-md{
-		display: "";
-	}
-} */
