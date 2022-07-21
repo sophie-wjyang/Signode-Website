@@ -75,7 +75,6 @@ h1 span {
 }
 
 .banner-text p {
-	font-size: 20px;
 	padding: 0;
 }
 
@@ -93,33 +92,33 @@ h1 span {
 @media screen and (min-width: 1200px) {
 	.banner-text h1,
 	h1 span {
-		font-size: 65px;
+		font-size: 55px;
 	}
 
 	.banner-text p {
-		font-size: 20px;
+		font-size: 17px;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.banner-text h1,
 	h1 span {
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	.banner-text p {
-		font-size: 19px;
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.banner-text h1,
 	h1 span {
-		font-size: 55px;
+		font-size: 45px;
 	}
 
 	.banner-text p {
-		font-size: 18px;
+		font-size: 15px;
 	}
 }
 
@@ -141,10 +140,32 @@ h1 span {
 }
 
 /************************************ WHAT WE DO & WHY SIGNODE *************************************/
-#what-we-do-image {
-	border-radius: rounded;
+.venobox{
+	position: relative;
 }
 
+.play-button{
+	position: absolute;
+	font-size: 75px;
+	/* color: var(--clr-signode-red); */
+	color: white;
+	margin: 0;
+	top: 50%; 
+	left: 50%; 
+	/* the transformation accounts for the width and height of the icon itself */
+	transform: translate(-50%,-50%);
+
+}
+
+.venobox-placeholder-image{
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 10px;
+}
+
+.venobox:hover .venobox-placeholder-image{
+	filter: brightness(60%);
+	transition: filter 0.2s;
+}
 
 /************************************ SOLUTIONS *************************************/
 

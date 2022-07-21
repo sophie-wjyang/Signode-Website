@@ -18,6 +18,13 @@
 		<!-- JQuery -->
 		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+		<!-- lightbox -->
+		<link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.min.css">
+    
+		<!-- venobox -->
+		<link rel="stylesheet" href="/node_modules/venobox/dist/venobox.min.css" />
+
+
 		<title>Signode Canada</title>
 
 		<!-- load partials -->
@@ -45,7 +52,7 @@
 		
 		<!-- ******************************* HERO BANNER ************************************** -->
 
-		<div class="bg-image p-5 text-left shadow-1-strong mb-5 text-white d-flex" style="background-image: url('/images/home-page/background-image.png'); height: 700px;">
+		<div class="bg-image p-5 text-left shadow-1-strong mb-5 text-white d-flex" style="background-image: url('/images/unknown.png'); height: 500px;">
 			<div class="container banner-text align-self-center my-auto">
 				<h1>WE'LL <span style="color: #b43c25">PROTECT</span> IT FROM HERE.</h1>
 				<div class="banner-divider-dash"></div> 
@@ -57,19 +64,17 @@
 		
         <!-- ******************************* WHAT WE DO & WHY SIGNODE************************************** -->
 
-
-		<div class="container marketing">
-            
-            <br><br><br><br><br><br>
+		<div class="container">
+            <br><br><br>
 
             <!-- WHAT WE DO -->
-            <div class="row featurette">
+            <div class="row">
 
                 <!-- text -->
-                <div class="col-md-6 order-md-3">
+                <div class="col-lg-6 order-lg-3 my-auto">
 
                     <!-- heading -->
-                    <div class="featurette-heading">
+                    <div>
                         <h5 class="sub-heading">About Us</h5>
                         <h2 class="fw-normal lh-1 main-heading">What We Do</h2>
                     </div>
@@ -77,31 +82,34 @@
                     <div class="divider-dash"></div> 
 					<!-- end heading -->
                     
-                    <p class="lead text-content">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment. 
-                    We provide our customers with advanced solutions that increase production efficiency, improve load integrity, and reduce operating costs.</p>
-                
+                    <p class="lead text-content">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, tools, software, and equipment that optimize end-of-line packaging operations and protect products in transit.</p>
+                	<br>
                 </div>
 
                 <!-- column for spacing -->
-                <div class="empty-column col-md-1 order-md-2"></div>
+                <div class="empty-column col-lg-1 order-lg-2"></div>
 
-                <!-- image -->
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" src="/images/home-page/what-we-do.jpg" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                <div class="col-lg-5 order-lg-1 text-center my-auto image-column">
+					<!-- video -->
+					<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/7QYcUBZ4uDk">
+						<!-- placeholder image -->
+						<img src="/images/services-page/video-thumbnail.png" alt="" class="venobox-placeholder-image w-100">
+
+						<!-- play icon -->
+						<i class="fa-regular fa-circle-play play-button"></i>
+					</a>
                 </div>
-            </div>
+            </div> <br><br><br><br>
 
-            <br><br><br><br><br><br>
 
-            
-            <!-- WHY SIGNODE -->
-             <div class="row featurette">
+			<!-- WHY SIGNODE -->
+            <div class="row">
 
                 <!-- text -->
-                <div class="col-md-6 order-md-1">
+                <div class="col-lg-6 order-lg-1 my-auto">
 
                     <!-- heading -->
-                    <div class="featurette-heading">
+                    <div>
                         <h5 class="sub-heading">About Us</h5>
                         <h2 class="fw-normal lh-1 main-heading">Why Signode</h2>
                     </div>
@@ -109,22 +117,29 @@
                     <div class="divider-dash"></div> 
 					<!-- end heading -->
                     
-                    <p class="lead text-content">Signode is a leading manufacturer of a broad spectrum of transit packaging consumables, software, and equipment. 
-                    We provide our customers with advanced solutions that increase production efficiency, improve load integrity, and reduce operating costs.</p>
-                
+                    <p class="lead text-content">What makes us unique is our systems approach to serving customers’ needs. In addition to providing our customers with the packaging materials and the application equipment for each, we also support our product applications with our own technical and engineering resources, operator equipment and safety training, and maintenance and repair services.</p>
+					<br>
                 </div>
 
                 <!-- column for spacing -->
-                <div class="empty-column col-md-1 order-md-2"></div>
+                <div class="empty-column col-lg-1 order-lg-2"></div>
 
-                <!-- image -->
-                <div class="col-md-5 order-md-3">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" src="/images/home-page/why-signode.jpg" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                <div class="col-lg-5 order-lg-3 text-center my-auto image-column">
+					<!-- video -->
+					<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/7Vm3HTmoxm0">
+						<!-- placeholder image -->
+						<img src="/images/services-page/video-thumbnail.png" alt="" class="venobox-placeholder-image w-100">
+
+						<!-- play icon -->
+						<i class="fa-regular fa-circle-play play-button"></i>
+					</a>
                 </div>
             </div>
+
+            <br><br><br>
+            
 		</div>
 
-        <br><br><br><br><br><br>
 
 		
 		<!-- ******************************* SOLUTIONS ************************************** -->
@@ -607,6 +622,20 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+		<!-- Lightbox js -->
+		<script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+		<!-- Venobox js -->
+		<script src="/node_modules/venobox/dist/venobox.min.js"></script>
+	
+		<!-- Venobox script -->
+		<script>
+		  new VenoBox({
+			selector: '.venobox',
+			maxWidth: '70%',
+			spinner: 'wander'
+		  });
+		</script>
 
 	</body>
 </html>

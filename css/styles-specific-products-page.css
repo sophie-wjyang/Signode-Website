@@ -81,6 +81,7 @@
 	background-color: white;
 }
 
-.card-img-right{
-	object-fit: cover;
+.card-img-right {
+    width: 100%;
+    object-fit: fill;
 }
