@@ -213,7 +213,7 @@
 /* search icon */
 #search-submit {
 	width: 63px;
-	background: url(../images/partials/search-icon.svg) center center no-repeat;
+	background: url(/images/partials/search-icon.svg) center center no-repeat;
 	text-indent: -10000px;
 	outline: none;
 	border: none;
