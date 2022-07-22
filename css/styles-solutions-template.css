@@ -66,44 +66,31 @@
 	font-size: 18px;
 }
 
-/************************************ SPECIFIC PRODUCTS *************************************/
+/************************************ HEADING AND DESCRIPTION *************************************/
 
-#products-section .card{
-	background-color: white;
-	border: none;
-	/* border: 1px solid #b9b9b9; */
+.description{
+	font-size: 17px;
+	color:rgb(83, 83, 83);
+}
+
+#solutions-gallery .page-label{
+	font-family: var(--ff-open-sans);
+}
+
+/************************************ SOLUTIONS *************************************/
+
+#solutions-gallery .solutions-button:hover{
 	box-shadow: 0 10px 20px 3px rgb(232, 232, 232) !important;
-	
+	transition: box-shadow 0.35s;
 }
 
-#products-section .card-body{
-	border: white;
-}
-
-/* product name */
-#products-section .card-title{
-	font-size: 25px;
+.gallery-text {
+	font-family: var(--ff-open-sans);
 	color: black;
+	font-size: 18px;
 }
 
-#products-section .card-title:hover{
+#solutions-gallery .gallery-text:hover{
 	color: var(--clr-signode-red);
-	cursor: pointer;
-}
-
-#products-section a:hover{
 	text-decoration: none;
-}
-
-/* product description */
-#products-section .card-text{
-	font-size: 15px;
-}
-
-#products-section img{
-	/* prevents image from stretching */
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	border-radius: 3px 0px 0px 3px;
 }

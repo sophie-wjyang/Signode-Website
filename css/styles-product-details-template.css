@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
 
 /**************************************** GLOBAL *********************************************/
 
 /* global styling constants */
-:root{
+:root {
 	--clr-signode-red: #b73f27;
+	--clr-grey-background: #fafafa;
 
 	--ff-open-sans: "Open Sans", sans-serif;
 	--ff-source-sans: "Source Sans 3", sans-serif;
@@ -15,6 +17,10 @@
 	/* default font */
 	font-family: var(--ff-source-sans);
 	font-weight: 500;
+}
+
+body {
+	background-color: white;
 }
 
 .main-heading {
@@ -49,20 +55,66 @@
 }
 
 
-/************************************ INDUSTRIES *************************************/
-
-#industry-gallery .industry-button:hover{
-	box-shadow: 0 10px 20px 3px rgb(232, 232, 232) !important;
-	transition: box-shadow 0.35s;
+/************************************ BREADCRUMB *************************************/
+.breadcrumb{
+	background-color: transparent;
+	padding: 0;
+	margin-bottom: 5px;
 }
 
-.gallery-text {
+.breadcrumb .breadcrumb-item a{
+	color: var(--clr-signode-red);
+	font-size: 18px;
+	font-style: italic;
+}
+
+.breadcrumb .breadcrumb-item.active{
+	color: var(--clr-signode-red);
+	font-size: 18px;
+}
+
+
+/************************************ PRODUCT DETAILS *************************************/
+
+.description{
+	font-size: 17px;
+	color:rgb(83, 83, 83);
+}
+
+.page-label{
+	font-family: var(--ff-open-sans);
+}
+
+.product-name{
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h2.heading{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+/************************************ RELATED PRODUCTS *************************************/
+
+.gallery-title {
 	font-family: var(--ff-open-sans);
 	color: black;
 	font-size: 18px;
 }
 
-#industry-gallery .gallery-text:hover{
+.gallery-title:hover{
 	color: var(--clr-signode-red);
 	text-decoration: none;
 }
+
+.gallery-description{
+	font-size: 15px;
+}
+
+.related-product:hover{
+	box-shadow: 0 10px 20px 3px rgb(232, 232, 232) !important;
+	transition: box-shadow 0.35s;
+}
+
